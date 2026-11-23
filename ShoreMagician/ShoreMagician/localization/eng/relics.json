@@ -1,5 +1,45 @@
 {
-  "SHOREMAGICIAN-ENCHANTED_BUCKLER.title": "秘法护符",
+  "SHOREMAGICIAN-ENCHANTED_BUCKLER.title": "Spell Booklet",
   "SHOREMAGICIAN-ENCHANTED_BUCKLER.description": "每回合首次打出[gold]附魔[/gold]牌时，获得[blue]4[/blue]点[gold]格挡[/gold]。",
-  "SHOREMAGICIAN-ENCHANTED_BUCKLER.flavor": "海岸术士随身携带的普鲁士蓝符石，在咒语首次共鸣时泛起微光。"
+  "SHOREMAGICIAN-ENCHANTED_BUCKLER.flavor": "海岸术士随身翻阅的普鲁士蓝法术笔记，页角沾着海盐与浅蓝符粉。",
+
+  "SHOREMAGICIAN-ARCANE_LEXICON.title": "Arcane Lexicon",
+  "SHOREMAGICIAN-ARCANE_LEXICON.description": "替换[gold]法术小册[/gold]。\n每当你打出一张[gold]附魔[/gold]牌时，获得[blue]3[/blue]点[gold]格挡[/gold]。",
+  "SHOREMAGICIAN-ARCANE_LEXICON.flavor": "从泛潮手札蜕变而成的厚重秘典，每一道咒文都在纸页间自行共鸣。",
+
+  "SHOREMAGICIAN-MYSTERIOUS_TALISMAN.title": "Mysterious Talisman",
+  "SHOREMAGICIAN-MYSTERIOUS_TALISMAN.description": "[gold]诅咒[/gold]不会被[gold]变化[/gold]为[red]执迷[/red]、[red]凡庸[/red]、[red]霉运[/red]或[red]债务[/red]。",
+  "SHOREMAGICIAN-MYSTERIOUS_TALISMAN.flavor": "一张边缘焦黑的海盐镇符，能挡住最棘手的几缕厄运。",
+
+  "SHOREMAGICIAN-RED_SHELL.title": "Red Shell",
+  "SHOREMAGICIAN-RED_SHELL.description": "每[blue]3[/blue]场战斗，卡牌奖励中额外增加[blue]1[/blue]张[red]铁甲战士[/red]的能力牌。",
+  "SHOREMAGICIAN-RED_SHELL.flavor": "炽热而厚重的赤红螺壳，贴近耳畔能听见钢铁碰撞与战吼的回响。",
+
+  "SHOREMAGICIAN-ORANGE_SHELL.title": "Orange Shell",
+  "SHOREMAGICIAN-ORANGE_SHELL.description": "每[blue]3[/blue]场战斗，卡牌奖励中额外增加[blue]1[/blue]张[gold]储君[/gold]的能力牌。",
+  "SHOREMAGICIAN-ORANGE_SHELL.flavor": "镀着落日与星辉般琥珀光泽的贝壳，隐约流淌着王权与群星的律动。",
+
+  "SHOREMAGICIAN-WHITE_SHELL.title": "White Shell",
+  "SHOREMAGICIAN-WHITE_SHELL.description": "每[blue]3[/blue]场战斗，卡牌奖励中额外增加[blue]1[/blue]张无色能力牌。",
+  "SHOREMAGICIAN-WHITE_SHELL.flavor": "被海浪打磨得近乎透明的素白贝壳，折射出不属于任何学派的纯粹奥术。",
+
+  "SHOREMAGICIAN-MOON_SAND.title": "Moon Sand",
+  "SHOREMAGICIAN-MOON_SAND.description": "你可以以[blue]0[/blue]点能量打出[gold]海风[/gold]并将其[gold]消耗[/gold]。",
+  "SHOREMAGICIAN-MOON_SAND.flavor": "只在满月退潮时现身的细银海沙，能将刺骨海风收束于掌心。",
+
+  "SHOREMAGICIAN-DRIFT_BOTTLE.title": "Drift Bottle",
+  "SHOREMAGICIAN-DRIFT_BOTTLE.description": "每回合首次打出能力牌时，打出[gold]抽牌堆[/gold]底部的牌。",
+  "SHOREMAGICIAN-DRIFT_BOTTLE.flavor": "不知从哪片海域漂来的玻璃瓶，每当法阵成型，瓶中信便会浮出水面。",
+
+  "SHOREMAGICIAN-ELECTRIC_EEL.title": "Electric Eel",
+  "SHOREMAGICIAN-ELECTRIC_EEL.description": "每场战斗第一次抽到[gold]诅咒[/gold]牌时，抽[blue]2[/blue]张牌。",
+  "SHOREMAGICIAN-ELECTRIC_EEL.flavor": "盘踞在浅礁缝隙里的蓝电海鳗，察觉厄运逼近便会迸发醒神电弧。",
+
+  "SHOREMAGICIAN-STARFISH.title": "Starfish",
+  "SHOREMAGICIAN-STARFISH.description": "[gold]缓慢[/gold]效果的伤害加成幅度翻倍。",
+  "SHOREMAGICIAN-STARFISH.flavor": "紧贴礁石的五芒星海生物，被它缠上的猎物每动一下都会更加沉重。",
+
+  "SHOREMAGICIAN-SAILCLOTH.title": "Sailcloth",
+  "SHOREMAGICIAN-SAILCLOTH.description": "在休息处，你可以选择为牌组中的一张牌[gold]附魔[/gold]：[purple]迅捷[/purple][blue]2[/blue]。",
+  "SHOREMAGICIAN-SAILCLOTH.flavor": "裁自旧帆船的坚韧粗麻，在篝火微风中仍保留着乘风破浪的劲道。"
 }

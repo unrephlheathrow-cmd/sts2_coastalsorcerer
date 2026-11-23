@@ -1,0 +1,5 @@
+{
+  "OPTION_SAILCLOTH_ENCHANT.name": "Enchant",
+  "OPTION_SAILCLOTH_ENCHANT.description": "为[gold]牌组[/gold]中的一张牌[gold]附魔[/gold]：[purple]迅捷[/purple][blue]2[/blue]。",
+  "OPTION_SAILCLOTH_ENCHANT.descriptionDisabled": "[red]你没有可以附魔迅捷的牌。[/red]"
+}
