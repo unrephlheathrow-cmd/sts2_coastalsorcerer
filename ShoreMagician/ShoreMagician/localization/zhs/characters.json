@@ -2,8 +2,8 @@
   "SHOREMAGICIAN-SHORE_MAGICIAN.aromaPrinciple": "[sine][blue]……海风与咒文同在……[/blue][/sine]",
   "SHOREMAGICIAN-SHORE_MAGICIAN.banter.alive.endTurnPing": "潮汐未歇。",
   "SHOREMAGICIAN-SHORE_MAGICIAN.banter.dead.endTurnPing": "……",
-  "SHOREMAGICIAN-SHORE_MAGICIAN.cardsModifierDescription": "海岸魔术师的卡牌现在会出现在奖励与商店中。",
-  "SHOREMAGICIAN-SHORE_MAGICIAN.cardsModifierTitle": "海岸魔术师卡牌",
+  "SHOREMAGICIAN-SHORE_MAGICIAN.cardsModifierDescription": "海岸术士的卡牌现在会出现在奖励与商店中。",
+  "SHOREMAGICIAN-SHORE_MAGICIAN.cardsModifierTitle": "海岸术士卡牌",
   "SHOREMAGICIAN-SHORE_MAGICIAN.description": "来自普鲁士蓝海岸的秘术旅者。\n擅长利用[gold]附魔[/gold]、[gold]变化[/gold]与[gold]魔力强度[/gold]编织战斗节奏。",
   "SHOREMAGICIAN-SHORE_MAGICIAN.eventDeathPrevention": "潮汐尚未退尽，我还不能倒下。",
   "SHOREMAGICIAN-SHORE_MAGICIAN.goldMonologue": "[sine]亮晶晶的……或许能换来更多咒卷。[/sine]",
@@ -11,8 +11,8 @@
   "SHOREMAGICIAN-SHORE_MAGICIAN.pronounObject": "他",
   "SHOREMAGICIAN-SHORE_MAGICIAN.pronounPossessive": "他的",
   "SHOREMAGICIAN-SHORE_MAGICIAN.pronounSubject": "他",
-  "SHOREMAGICIAN-SHORE_MAGICIAN.title": "海岸魔术师",
-  "SHOREMAGICIAN-SHORE_MAGICIAN.titleObject": "海岸魔术师",
-  "SHOREMAGICIAN-SHORE_MAGICIAN.shortTitle": "海岸魔术师",
+  "SHOREMAGICIAN-SHORE_MAGICIAN.title": "海岸术士",
+  "SHOREMAGICIAN-SHORE_MAGICIAN.titleObject": "海岸术士",
+  "SHOREMAGICIAN-SHORE_MAGICIAN.shortTitle": "海岸术士",
   "SHOREMAGICIAN-SHORE_MAGICIAN.unlockText": "可直接游玩。"
 }

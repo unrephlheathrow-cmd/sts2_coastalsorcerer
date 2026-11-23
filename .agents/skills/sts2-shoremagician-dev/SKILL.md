@@ -2,14 +2,14 @@
 name: sts2-shoremagician-dev
 description: >-
   Architecture standard and implementation runbook for the Slay the Spire 2
-  ShoreMagician character mod (BaseLib on STS2 v0.113.1). Use this skill when
-  creating, modifying, localizing, or testing ShoreMagician cards, powers,
+  Coastal Sorcerer (海岸术士 / internal ID ShoreMagician) character mod (BaseLib on STS2 v0.113.1). Use this skill when
+  creating, modifying, localizing, or testing Coastal Sorcerer cards, powers,
   relics, commands, hooks, or patches.
 ---
 
-# ShoreMagician Mod 开发执行指南（BaseLib / STS2 v0.113.1）
+# Coastal Sorcerer（海岸术士 / 内部 ID `ShoreMagician`）Mod 开发执行指南（BaseLib / STS2 v0.113.1）
 
-本 Skill 为 `ShoreMagician` 角色 Mod 的强制开发规范（对应文本总纲 [开发架构标准.md](../../../开发架构标准.md)）。执行任何编码任务前，严格遵循以下约束，**严禁猜测未验证的 API**。
+本 Skill 为 **Coastal Sorcerer（海岸术士）** 角色 Mod（内部 ID 沿用 `ShoreMagician`）的强制开发规范（对应文本总纲 [开发架构标准.md](../../../开发架构标准.md)）。执行任何编码任务前，严格遵循以下约束，**严禁猜测未验证的 API**。
 
 ## 一、不可违反的硬性规则
 
