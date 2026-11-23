@@ -29,4 +29,13 @@ public static class StringExtensions
 
     public static string RelicImagePath(this string file) =>
         WithFallback("relics", file, "todo_relic.png");
+
+    public static string PotionImagePath(this string file) =>
+        WithFallback("potions", file, "todo_potion.png");
+
+    public static string PotionOutlineImagePath(this string file) =>
+        WithFallback("potions", file, "todo_potion_outline.png");
+
+    public static string LargePotionImagePath(this string file) =>
+        WithFallback("potions", file, "todo_potion_big.png");
 }

@@ -1,0 +1,12 @@
+{
+  "SHOREMAGICIAN-CONCENTRATED_MAGIC_POTION.title": "浓缩魔力",
+  "SHOREMAGICIAN-CONCENTRATED_MAGIC_POTION.description": "为手牌中的一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]{SharpAmount}[/blue]。",
+  "SHOREMAGICIAN-CONCENTRATED_MAGIC_POTION.selectionScreenPrompt": "选择一张攻击牌以附加[purple]锋利[/purple]。",
+
+  "SHOREMAGICIAN-DISTORTED_MEMORY_POTION.title": "扭曲回忆",
+  "SHOREMAGICIAN-DISTORTED_MEMORY_POTION.description": "将手牌中至多{Cards}张牌[gold]变化[/gold]为0费牌。",
+  "SHOREMAGICIAN-DISTORTED_MEMORY_POTION.selectionScreenPrompt": "选择至多3张要[gold]变化[/gold]为0费牌的手牌。",
+
+  "SHOREMAGICIAN-WARDING_ELIXIR_POTION.title": "消灾符水",
+  "SHOREMAGICIAN-WARDING_ELIXIR_POTION.description": "将[gold]手牌[/gold]和[gold]抽牌堆[/gold]中的所有诅咒和状态牌[gold]变化[/gold]为0费、可打出且带有[gold]消耗[/gold]的[gold]海风[/gold]。"
+}

@@ -324,4 +324,81 @@ public static class ShoreMagicianCmd
         await ShoreMagicianHook.OnCardTransformed(ctx, owner, card, replacement, cardSource);
         return replacement;
     }
+
+    public static async Task<CardModel?> TransformToZeroCostCard(
+        PlayerChoiceContext ctx,
+        Player owner,
+        CardModel card,
+        CardModel? cardSource)
+    {
+        if (!card.IsTransformable)
+            return null;
+
+        var rng = owner.RunState.Rng.CombatCardGeneration;
+        static bool IsZeroCostCard(CardModel c, ModelId excludeId) =>
+            c.EnergyCost.Canonical == 0
+            && !c.EnergyCost.CostsX
+            && c.CanonicalStarCost <= 0
+            && c.CanBeGeneratedInCombat
+            && c.Id != excludeId;
+
+        var zeroCostOptions = CardFactory.GetDefaultTransformationOptions(card, true)
+            .Where(c => IsZeroCostCard(c, card.Id))
+            .ToList();
+
+        if (zeroCostOptions.Count == 0)
+        {
+            var unlockedCharPool = owner.Character.CardPool
+                .GetUnlockedCards(owner.UnlockState, owner.RunState.CardMultiplayerConstraint)
+                .Where(c => IsZeroCostCard(c, card.Id));
+            zeroCostOptions = CardFactory.FilterForRun(owner.RunState, unlockedCharPool).ToList();
+        }
+
+        if (zeroCostOptions.Count == 0)
+        {
+            var allCharZeroCost = ModelDb.AllCharacterCardPools
+                .SelectMany(p => p.GetUnlockedCards(owner.UnlockState, owner.RunState.CardMultiplayerConstraint))
+                .Where(c => IsZeroCostCard(c, card.Id))
+                .DistinctBy(c => c.Id);
+            zeroCostOptions = CardFactory.FilterForRun(owner.RunState, allCharZeroCost).ToList();
+        }
+
+        CardModel? replacement;
+        if (zeroCostOptions.Count > 0)
+        {
+            var generated = CardFactory.CreateRandomCardForTransform(card, zeroCostOptions, true, rng);
+            Task<CardPileAddResult?> task;
+            _handlingTransformDepth++;
+            try
+            {
+                task = CardCmd.Transform(card, generated);
+            }
+            finally
+            {
+                _handlingTransformDepth--;
+            }
+
+            var res = await task;
+            replacement = res?.cardAdded;
+        }
+        else
+        {
+            Task<CardPileAddResult> task;
+            _handlingTransformDepth++;
+            try
+            {
+                task = CardCmd.TransformToRandom(card, rng);
+            }
+            finally
+            {
+                _handlingTransformDepth--;
+            }
+
+            var res = await task;
+            replacement = res.cardAdded;
+        }
+
+        await ShoreMagicianHook.OnCardTransformed(ctx, owner, card, replacement, cardSource);
+        return replacement;
+    }
 }
