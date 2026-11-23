@@ -1,0 +1,53 @@
+<Project>
+    <PropertyGroup>
+        <ImplicitUsings>true</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <DefaultItemExcludes>
+            packages/**;src/**;addons/**;images/**;localization/**;scenes/**;audio/**;scripts/**
+        </DefaultItemExcludes>
+        <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
+        <AssemblyVersion>0.1.0.0</AssemblyVersion>
+        <FileVersion>0.1.0.0</FileVersion>
+        <Version>0.1.0</Version>
+        <NoWarn>$(NoWarn);MSB3270;CS0436</NoWarn>
+        <BaseLibVersion>3.4.8</BaseLibVersion>
+    </PropertyGroup>
+
+    <Import Project="$(MSBuildThisFileDirectory)..\local.props" Condition="Exists('$(MSBuildThisFileDirectory)..\local.props')"/>
+
+    <PropertyGroup>
+        <Sts2Path Condition="'$(Sts2Path)' == ''">d:/driver/steam/steamapps/common/Slay the Spire 2</Sts2Path>
+        <ModsPath Condition="'$(ModsPath)' == ''">$(Sts2Path)/mods/</ModsPath>
+        <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(Sts2Path)/data_sts2_windows_x86_64</Sts2DataDir>
+    </PropertyGroup>
+
+    <ItemGroup Condition="Exists('$(Sts2DataDir)')">
+        <Reference Include="0Harmony">
+            <HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="sts2">
+            <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="SmartFormat">
+            <HintPath>$(Sts2DataDir)/SmartFormat.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="Steamworks.NET">
+            <HintPath>$(Sts2DataDir)/Steamworks.NET.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="$(BaseLibVersion)"/>
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="All"/>
+        <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="0.2.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Publicize Include="sts2" IncludeVirtualMembers="false" IncludeCompilerGeneratedMembers="false"/>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,141 @@
+{
+  "SHOREMAGICIAN-MAGIC_POWER.title": "Magic Power",
+  "SHOREMAGICIAN-MAGIC_POWER.description": "使卡牌上的[gold]附魔[/gold]数值提高[blue]X[/blue]点。",
+  "SHOREMAGICIAN-MAGIC_POWER.smartDescription": "使卡牌上的[gold]附魔[/gold]数值提高[blue]{Amount}[/blue]点。",
+
+  "SHOREMAGICIAN-TEMP_MAGIC_POWER.title": "Temporary Magic Power",
+  "SHOREMAGICIAN-TEMP_MAGIC_POWER.description": "本回合使卡牌上的[gold]附魔[/gold]数值提高[blue]X[/blue]点。",
+  "SHOREMAGICIAN-TEMP_MAGIC_POWER.smartDescription": "本回合使卡牌上的[gold]附魔[/gold]数值提高[blue]{Amount}[/blue]点。",
+
+  "SHOREMAGICIAN-TURN_ILL_TO_GOOD_POWER.title": "Silver Lining",
+  "SHOREMAGICIAN-TURN_ILL_TO_GOOD_POWER.description": "每回合首次抽到诅咒牌时，获得[blue]X[/blue]点[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-TURN_ILL_TO_GOOD_POWER.smartDescription": "每回合首次抽到诅咒牌时，获得[blue]{Amount}[/blue]点[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-RED_TIDE_POWER.title": "Red Tide",
+  "SHOREMAGICIAN-RED_TIDE_POWER.description": "变化牌、移除或添加[gold]附魔[/gold]时，获得[blue]X[/blue]点[gold]格挡[/gold]（每回合最多4次）。",
+  "SHOREMAGICIAN-RED_TIDE_POWER.smartDescription": "变化牌、移除或添加[gold]附魔[/gold]时，获得[blue]{Amount}[/blue]点[gold]格挡[/gold]（每回合最多4次）。",
+
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_POWER.title": "Compendium",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_POWER.description": "战斗结束时，获得[blue]X[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple]2”的奖励。",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_POWER.smartDescription": "战斗结束时，获得[blue]{Amount}[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple]2”的奖励。",
+
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_UPGRADED_POWER.title": "Compendium+",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_UPGRADED_POWER.description": "战斗结束时，获得[blue]X[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple]3”的奖励。",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY_UPGRADED_POWER.smartDescription": "战斗结束时，获得[blue]{Amount}[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple]3”的奖励。",
+
+  "SHOREMAGICIAN-SPELL_DISCIPLINE_POWER.title": "Arcane Discipline",
+  "SHOREMAGICIAN-SPELL_DISCIPLINE_POWER.description": "在你的回合开始时，多抽[blue]X[/blue]张牌。",
+  "SHOREMAGICIAN-SPELL_DISCIPLINE_POWER.smartDescription": "在你的回合开始时，多抽[blue]{Amount}[/blue]张牌。",
+
+  "SHOREMAGICIAN-MOON_OF_LIGHTHOUSE_POWER.title": "Moonlit Beacon",
+  "SHOREMAGICIAN-MOON_OF_LIGHTHOUSE_POWER.description": "每当你[gold]变化[/gold]诅咒牌时，将其变为[gold]燃料[/gold]、[gold]仆从捐躯[/gold]、[gold]喜悦[/gold]、[gold]灵魂[/gold]或[gold]晕眩[/gold]。",
+  "SHOREMAGICIAN-MOON_OF_LIGHTHOUSE_POWER.smartDescription": "每当你[gold]变化[/gold]诅咒牌时，将其变为[gold]燃料[/gold]、[gold]仆从捐躯[/gold]、[gold]喜悦[/gold]、[gold]灵魂[/gold]或[gold]晕眩[/gold]。",
+
+  "SHOREMAGICIAN-CALLOUSED_SKIN_POWER.title": "Calloused Skin",
+  "SHOREMAGICIAN-CALLOUSED_SKIN_POWER.description": "“海风”诅咒无法伤害你；每消耗一张诅咒或状态牌获得[blue]X[/blue]点临时[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-CALLOUSED_SKIN_POWER.smartDescription": "“海风”诅咒无法伤害你；每消耗一张诅咒或状态牌获得[blue]{Amount}[/blue]点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-CALLOUSED_SKIN_UPGRADED_POWER.title": "Calloused Skin+",
+  "SHOREMAGICIAN-CALLOUSED_SKIN_UPGRADED_POWER.description": "每次失去生命时少失去[blue]X[/blue]点；每消耗一张诅咒或状态牌获得[blue]X[/blue]点临时[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-CALLOUSED_SKIN_UPGRADED_POWER.smartDescription": "每次失去生命时少失去[blue]{Amount}[/blue]点；每消耗一张诅咒或状态牌获得[blue]{Amount}[/blue]点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-PREEMPTIVE_VOICE_POWER.title": "Prelude",
+  "SHOREMAGICIAN-PREEMPTIVE_VOICE_POWER.description": "每回合打出的第一张[gold]附魔[/gold]牌的附魔效果翻倍。",
+  "SHOREMAGICIAN-PREEMPTIVE_VOICE_POWER.smartDescription": "每回合打出的第一张[gold]附魔[/gold]牌的附魔效果翻倍。",
+
+  "SHOREMAGICIAN-OCEAN_CURRENT_POWER.title": "Ocean Current",
+  "SHOREMAGICIAN-OCEAN_CURRENT_POWER.description": "抽到诅咒牌时继续抽牌，直至手牌抽满或抽到一张未被[gold]附魔[/gold]的牌。",
+  "SHOREMAGICIAN-OCEAN_CURRENT_POWER.smartDescription": "抽到诅咒牌时继续抽牌，直至手牌抽满或抽到一张未被[gold]附魔[/gold]的牌。",
+
+  "SHOREMAGICIAN-EXHAUSTING_STRIKE_COST_POWER.title": "All-Out Aftermath",
+  "SHOREMAGICIAN-EXHAUSTING_STRIKE_COST_POWER.description": "本回合其他卡牌耗能增加[blue]X[/blue]点。",
+  "SHOREMAGICIAN-EXHAUSTING_STRIKE_COST_POWER.smartDescription": "本回合其他卡牌耗能增加[blue]{Amount}[/blue]点。",
+
+  "SHOREMAGICIAN-DOUBLE_NEXT_ENCHANTMENT_POWER.title": "Cantrip",
+  "SHOREMAGICIAN-DOUBLE_NEXT_ENCHANTMENT_POWER.description": "接下来打出的[blue]X[/blue]张[gold]附魔[/gold]牌附魔效果翻倍。",
+  "SHOREMAGICIAN-DOUBLE_NEXT_ENCHANTMENT_POWER.smartDescription": "接下来打出的[blue]{Amount}[/blue]张[gold]附魔[/gold]牌附魔效果翻倍。",
+
+  "SHOREMAGICIAN-FREE_ENCHANTED_CARDS_POWER.title": "Sublimate",
+  "SHOREMAGICIAN-FREE_ENCHANTED_CARDS_POWER.description": "下[blue]X[/blue]张[gold]附魔[/gold]牌免费打出。",
+  "SHOREMAGICIAN-FREE_ENCHANTED_CARDS_POWER.smartDescription": "下[blue]{Amount}[/blue]张[gold]附魔[/gold]牌免费打出。",
+
+  "SHOREMAGICIAN-RETAIN_ENCHANTED_HAND_POWER.title": "Still Waters",
+  "SHOREMAGICIAN-RETAIN_ENCHANTED_HAND_POWER.description": "本回合结束时[gold]保留[/gold]手牌中所有带有[gold]附魔[/gold]的牌。",
+  "SHOREMAGICIAN-RETAIN_ENCHANTED_HAND_POWER.smartDescription": "本回合结束时[gold]保留[/gold]手牌中所有带有[gold]附魔[/gold]的牌。",
+
+  "SHOREMAGICIAN-WEIRD_WAVE_COST_POWER.title": "Ripple Echo",
+  "SHOREMAGICIAN-WEIRD_WAVE_COST_POWER.description": "本回合内所有[gold]奇异浪花[/gold]耗能增加[blue]X[/blue]点。",
+  "SHOREMAGICIAN-WEIRD_WAVE_COST_POWER.smartDescription": "本回合内所有[gold]奇异浪花[/gold]耗能增加[blue]{Amount}[/blue]点。",
+
+  "SHOREMAGICIAN-RESONANT_MAGIC_POWER.title": "Harmonics",
+  "SHOREMAGICIAN-RESONANT_MAGIC_POWER.description": "本回合每打出一张[gold]附魔[/gold]牌后，获得[blue]X[/blue]点临时[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-RESONANT_MAGIC_POWER.smartDescription": "本回合每打出一张[gold]附魔[/gold]牌后，获得[blue]{Amount}[/blue]点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-CONVERGENCE_POWER.title": "Confluence",
+  "SHOREMAGICIAN-CONVERGENCE_POWER.description": "指定的牌首次进入[gold]手牌[/gold]时，获得能量并抽牌。",
+  "SHOREMAGICIAN-CONVERGENCE_POWER.smartDescription": "有[blue]{Amount}[/blue]张[gold]收束[/gold]目标牌等待上手，进入[gold]手牌[/gold]时获得[blue]2[/blue]点能量并抽牌。",
+
+  "SHOREMAGICIAN-NEXT_TURN_LESS_DRAW_POWER.title": "King Tide (Less Draw)",
+  "SHOREMAGICIAN-NEXT_TURN_LESS_DRAW_POWER.description": "下回合开始时少抽[blue]X[/blue]张牌。",
+  "SHOREMAGICIAN-NEXT_TURN_LESS_DRAW_POWER.smartDescription": "下回合开始时少抽[blue]{Amount}[/blue]张牌。",
+
+  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.title": "Vindication",
+  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.description": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]X[/blue]张牌并获得[blue]X[/blue]点临时[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.smartDescription": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]{Amount}[/blue]张牌并获得[blue]{Amount}[/blue]点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-WESTERLY_CURRENT_POWER.title": "West Wind Drift",
+  "SHOREMAGICIAN-WESTERLY_CURRENT_POWER.description": "本回合每[gold]变化[/gold]、[gold]消耗[/gold]或[gold]附魔[/gold]一张牌，对所有敌人造成[blue]X[/blue]点伤害。",
+  "SHOREMAGICIAN-WESTERLY_CURRENT_POWER.smartDescription": "本回合每[gold]变化[/gold]、[gold]消耗[/gold]或[gold]附魔[/gold]一张牌，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_POWER.title": "Rivers to the Sea",
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_POWER.description": "[gold]变化[/gold]牌时，普通变为罕见，罕见变为稀有，稀有变为塔罗牌或其他角色0费稀有牌。",
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_POWER.smartDescription": "[gold]变化[/gold]牌时，普通变为罕见，罕见变为稀有，稀有变为塔罗牌或其他角色0费稀有牌。",
+
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_UPGRADED_POWER.title": "Rivers to the Sea+",
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_UPGRADED_POWER.description": "[gold]变化[/gold]牌时，普通变为罕见，罕见变为稀有，稀有变为塔罗牌或其他角色带有[gold]虚无[/gold]的0费稀有牌。",
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA_UPGRADED_POWER.smartDescription": "[gold]变化[/gold]牌时，普通变为罕见，罕见变为稀有，稀有变为塔罗牌或其他角色带有[gold]虚无[/gold]的0费稀有牌。",
+
+  "SHOREMAGICIAN-MYRIAD_PHENOMENA_POWER.title": "Myriad",
+  "SHOREMAGICIAN-MYRIAD_PHENOMENA_POWER.description": "每回合开始多抽[blue]X[/blue]张牌；每回合打出的第一张牌放回[gold]抽牌堆[/gold]底。",
+  "SHOREMAGICIAN-MYRIAD_PHENOMENA_POWER.smartDescription": "每回合开始多抽[blue]{Amount}[/blue]张牌；每回合打出的第一张牌放回[gold]抽牌堆[/gold]底。",
+
+  "SHOREMAGICIAN-CROUCHING_TIGER_POWER.title": "Crouching Tiger",
+  "SHOREMAGICIAN-CROUCHING_TIGER_POWER.description": "具有[gold]缓慢[/gold]的敌人，受到的[gold]易伤[/gold]与[gold]虚弱[/gold]影响翻倍。",
+  "SHOREMAGICIAN-CROUCHING_TIGER_POWER.smartDescription": "具有[gold]缓慢[/gold]的敌人，受到的[gold]易伤[/gold]与[gold]虚弱[/gold]影响翻倍。",
+
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_POWER.title": "Sifting Tide",
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_POWER.description": "每回合首次产生[gold]海风[/gold]时，获得[blue]X[/blue]点能量。",
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_POWER.smartDescription": "每回合首次产生[gold]海风[/gold]时，获得[blue]{Amount}[/blue]点能量。",
+
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_UPGRADED_POWER.title": "Sifting Tide+",
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_UPGRADED_POWER.description": "你可以花费1点能量打出[gold]海风[/gold]并将其[gold]消耗[/gold]。",
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND_UPGRADED_POWER.smartDescription": "你可以花费1点能量打出[gold]海风[/gold]并将其[gold]消耗[/gold]。",
+
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_POWER.title": "Spring's Bounty",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_POWER.description": "接下来的[blue]X[/blue]回合中，每回合各自未花费超过[blue]3[/blue]点能量，完成后转化为战后[purple]完美契合[/purple]附魔奖励。",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_POWER.smartDescription": "剩余[blue]{Amount}[/blue]回合考验：每个回合花费不超过[blue]3[/blue]点能量，倒计时结束后转化为战后[purple]完美契合[/purple]附魔奖励。",
+
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_REWARD_POWER.title": "Spring's Bounty (Ready)",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_REWARD_POWER.description": "战斗结束时，获得[blue]X[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]”的奖励。",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY_REWARD_POWER.smartDescription": "战斗结束时，获得[blue]{Amount}[/blue]项“为牌组中的一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]”的奖励。",
+
+  "SHOREMAGICIAN-XIAOXIANG_POWER.title": "River of Reverie",
+  "SHOREMAGICIAN-XIAOXIANG_POWER.description": "在你的回合开始时，额外获得[blue]X[/blue]点能量。",
+  "SHOREMAGICIAN-XIAOXIANG_POWER.smartDescription": "在你的回合开始时，额外获得[blue]{Amount}[/blue]点能量。",
+
+  "SHOREMAGICIAN-VORTEX_FORM_POWER.title": "Maelstrom Form",
+  "SHOREMAGICIAN-VORTEX_FORM_POWER.description": "本场战斗你的手牌打出后会放回[gold]抽牌堆[/gold]底。",
+  "SHOREMAGICIAN-VORTEX_FORM_POWER.smartDescription": "本场战斗你的手牌打出后会放回[gold]抽牌堆[/gold]底。",
+
+  "SHOREMAGICIAN-EAST_WIND_POWER.title": "East Wind",
+  "SHOREMAGICIAN-EAST_WIND_POWER.description": "每当你洗牌时，对所有敌人施加[blue]X[/blue]层[gold]虚弱[/gold]和[blue]X[/blue]层[gold]易伤[/gold]。",
+  "SHOREMAGICIAN-EAST_WIND_POWER.smartDescription": "每当你洗牌时，对所有敌人施加[blue]{Amount}[/blue]层[gold]虚弱[/gold]和[blue]{Amount}[/blue]层[gold]易伤[/gold]。",
+
+  "SHOREMAGICIAN-WUDING_RIVER_POWER.title": "River of Flux",
+  "SHOREMAGICIAN-WUDING_RIVER_POWER.description": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；[gold]变化[/gold]出的牌均带有随机[gold]附魔[/gold]。",
+  "SHOREMAGICIAN-WUDING_RIVER_POWER.smartDescription": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；[gold]变化[/gold]出的牌均带有随机[gold]附魔[/gold]。",
+
+  "SHOREMAGICIAN-WUDING_RIVER_UPGRADED_POWER.title": "River of Flux+",
+  "SHOREMAGICIAN-WUDING_RIVER_UPGRADED_POWER.description": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；[gold]变化[/gold]出的牌均已[gold]升级[/gold]且带有随机[gold]附魔[/gold]。",
+  "SHOREMAGICIAN-WUDING_RIVER_UPGRADED_POWER.smartDescription": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；[gold]变化[/gold]出的牌均已[gold]升级[/gold]且带有随机[gold]附魔[/gold]。"
+}

@@ -1,0 +1,672 @@
+[gd_scene load_steps=28 format=3]
+
+[ext_resource type="Script" path="res://src/Core/Nodes/Combat/NCreatureVisuals.cs" id="1_ncv"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/shore_magician_combat.png" id="2_idle"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/mist_particle.png" id="3_mist"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/attack_0.png" id="4_atk0"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/attack_1.png" id="5_atk1"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/attack_2.png" id="6_atk2"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_00.png" id="7_c00"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_01.png" id="8_c01"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_02.png" id="9_c02"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_03.png" id="10_c03"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_04.png" id="11_c04"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_05.png" id="12_c05"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_06.png" id="13_c06"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_07.png" id="14_c07"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_08.png" id="15_c08"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_09.png" id="16_c09"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_10.png" id="17_c10"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/anim/cast_11.png" id="18_c11"]
+
+[sub_resource type="Gradient" id="Gradient_mist"]
+offsets = PackedFloat32Array(0, 0.2, 0.72, 1)
+colors = PackedColorArray(0.55, 0.92, 1, 0, 0.62, 0.94, 1, 0.42, 0.35, 0.68, 0.92, 0.22, 0.2, 0.45, 0.72, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mist"]
+gradient = SubResource("Gradient_mist")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mist"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 14.0
+direction = Vector3(-0.65, -0.75, 0)
+spread = 38.0
+initial_velocity_min = 14.0
+initial_velocity_max = 32.0
+gravity = Vector3(-6, -12, 0)
+damping_min = 6.0
+damping_max = 12.0
+scale_min = 0.28
+scale_max = 0.95
+color_ramp = SubResource("GradientTexture1D_mist")
+
+[sub_resource type="Animation" id="Animation_idle"]
+resource_name = "idle"
+length = 2.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.3, 2.6),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -2), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.3, 2.6),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.992, 1.02), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.3, 2.6),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [0.0, 0.014, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:skew")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.3, 2.6),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [0.0, -0.016, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_attack"]
+resource_name = "attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13, 0.31, 0.49),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_atk0"), ExtResource("5_atk1"), ExtResource("6_atk2"), ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.48),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.11, 0.16, 0.32, 0.5),
+"transitions": PackedFloat32Array(0.5, 0.35, 2, 0.5, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-10, 0), Vector2(28, -3), Vector2(8, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.11, 0.16, 0.32, 0.5),
+"transitions": PackedFloat32Array(0.5, 0.35, 2, 0.5, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.01, 0.99), Vector2(1.03, 0.99), Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.11, 0.16, 0.32, 0.5),
+"transitions": PackedFloat32Array(0.5, 0.35, 2, 0.5, 1),
+"update": 0,
+"values": [0.0, -0.025, 0.035, 0.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:skew")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle", -1, 1.0, false],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_cast"]
+resource_name = "cast"
+length = 0.78
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.12, 0.18, 0.23, 0.28, 0.35, 0.42, 0.49, 0.56, 0.63, 0.7, 0.77),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_c00"), ExtResource("8_c01"), ExtResource("9_c02"), ExtResource("10_c03"), ExtResource("11_c04"), ExtResource("12_c05"), ExtResource("13_c06"), ExtResource("14_c07"), ExtResource("15_c08"), ExtResource("16_c09"), ExtResource("17_c10"), ExtResource("18_c11"), ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.76),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.28, 0.52, 0.78),
+"transitions": PackedFloat32Array(-2, -2, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -4), Vector2(0, -2), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:skew")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.28, 0.48, 0.78),
+"transitions": PackedFloat32Array(1, -2, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.06, 1.13, 1.2, 1), Color(1.04, 1.09, 1.14, 1), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.78),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle", -1, 1.0, false],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_hurt"]
+resource_name = "hurt"
+length = 0.36
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.18, 0.36),
+"transitions": PackedFloat32Array(0.3, 2, 0.5, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-24, -4), Vector2(-6, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.18, 0.36),
+"transitions": PackedFloat32Array(0.3, 2, 0.5, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.94, 1.05), Vector2(1.02, 0.98), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.18, 0.36),
+"transitions": PackedFloat32Array(0.3, 2, 0.5, 1),
+"update": 0,
+"values": [0.0, -0.1, -0.02, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:skew")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.36),
+"transitions": PackedFloat32Array(0.3, 0.5, 1),
+"update": 0,
+"values": [0.0, -0.07, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.2, 0.36),
+"transitions": PackedFloat32Array(0.3, 2, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.55, 0.72, 0.72, 1), Color(1.12, 0.9, 0.9, 1), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.36),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle", -1, 1.0, false],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_die"]
+resource_name = "die"
+length = 0.85
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.22, 0.85),
+"transitions": PackedFloat32Array(0.5, 2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-18, -2), Vector2(-32, 26)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.85),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.04, 0.82)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.22, 0.85),
+"transitions": PackedFloat32Array(0.5, 2, 1),
+"update": 0,
+"values": [0.0, -0.12, -0.45]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.85),
+"transitions": PackedFloat32Array(1, 2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.05, 0.85, 0.9, 1), Color(0.55, 0.65, 0.8, 0.25)]
+}
+
+[sub_resource type="Animation" id="Animation_revive"]
+resource_name = "revive"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/BodyPivot/Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_idle")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/BodyPivot/StaffMistParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/BodyPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(0.4, 1),
+"update": 0,
+"values": [Vector2(-16, 12), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/BodyPivot:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(0.4, 1),
+"update": 0,
+"values": [Vector2(1.02, 0.9), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/BodyPivot:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.55),
+"transitions": PackedFloat32Array(0.4, 1),
+"update": 0,
+"values": [-0.2, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/BodyPivot:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.55),
+"transitions": PackedFloat32Array(0.5, 1, 1),
+"update": 0,
+"values": [Color(0.55, 0.7, 0.85, 0.3), Color(1.15, 1.3, 1.45, 1), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.55),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle", -1, 1.0, false],
+"method": &"play"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sm"]
+_data = {
+&"attack": SubResource("Animation_attack"),
+&"cast": SubResource("Animation_cast"),
+&"die": SubResource("Animation_die"),
+&"hurt": SubResource("Animation_hurt"),
+&"idle": SubResource("Animation_idle"),
+&"revive": SubResource("Animation_revive")
+}
+
+[node name="ShoreMagician" type="Node2D"]
+script = ExtResource("1_ncv")
+
+[node name="FormVfx" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Visuals" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="BodyPivot" type="Node2D" parent="Visuals"]
+
+[node name="Sprite" type="Sprite2D" parent="Visuals/BodyPivot"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_idle")
+centered = false
+offset = Vector2(-460, -860)
+
+[node name="StaffMistParticles" type="GPUParticles2D" parent="Visuals/BodyPivot"]
+position = Vector2(121.2, -280.1)
+amount = 16
+texture = ExtResource("3_mist")
+lifetime = 1.9
+preprocess = 1.0
+process_material = SubResource("ParticleProcessMaterial_mist")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_sm")
+}
+autoplay = "idle"
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -105.0
+offset_top = -335.0
+offset_right = 115.0
+offset_bottom = 0.0
+mouse_filter = 2
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(5, -175)
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(5, -365)
+
+[node name="OrbPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-10, -230)
+
+[node name="TalkPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(85, -275)

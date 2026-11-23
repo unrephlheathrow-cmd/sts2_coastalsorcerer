@@ -1,0 +1,23 @@
+# Godot 4 cache & editor state
+ShoreMagician/.godot/
+*.tmp
+
+# .NET / C# build outputs & local machine paths
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+ShoreMagician/local.props
+
+# Third-party reference & tutorial folders (not part of this mod repo)
+WatcherMod_onlyforreference/
+SlayTheSpire2ModdingTutorials-master/
+
+# Raw / temporary large art & animation sources
+*.gif
+art_refs/
+
+# OS junk
+.DS_Store
+Thumbs.db

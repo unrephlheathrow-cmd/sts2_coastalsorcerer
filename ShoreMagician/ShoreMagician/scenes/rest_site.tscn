@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs" id="1_rs"]
+[ext_resource type="Texture2D" path="res://ShoreMagician/images/character/shore_magician_combat.png" id="2_tex"]
+[ext_resource type="PackedScene" path="res://scenes/ui/selection_reticle.tscn" id="3_sr"]
+
+[node name="ShoreMagicianRestSite" type="Node2D"]
+scale = Vector2(0.9, 0.9)
+script = ExtResource("1_rs")
+
+[node name="Visuals" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tex")
+centered = false
+offset = Vector2(-460, -860)
+
+[node name="ControlRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="SelectionReticle" parent="ControlRoot" instance=ExtResource("3_sr")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -110.0
+offset_top = -340.0
+offset_right = 120.0
+offset_bottom = 10.0
+
+[node name="Hitbox" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = -110.0
+offset_top = -340.0
+offset_right = 120.0
+offset_bottom = 10.0
+
+[node name="ThoughtBubbleRight" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 125.0
+offset_top = -305.0
+offset_right = 125.0
+offset_bottom = -305.0
+
+[node name="ThoughtBubbleLeft" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = -125.0
+offset_top = -305.0
+offset_right = -125.0
+offset_bottom = -305.0

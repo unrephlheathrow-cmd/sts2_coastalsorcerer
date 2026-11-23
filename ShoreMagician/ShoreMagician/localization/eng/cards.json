@@ -1,0 +1,276 @@
+{
+  "SHOREMAGICIAN-STRIKE_SHORE_MAGICIAN.title": "Strike",
+  "SHOREMAGICIAN-STRIKE_SHORE_MAGICIAN.description": "造成{Damage:diff()}点伤害。",
+
+  "SHOREMAGICIAN-DEFEND_SHORE_MAGICIAN.title": "Defend",
+  "SHOREMAGICIAN-DEFEND_SHORE_MAGICIAN.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
+
+  "SHOREMAGICIAN-AFFIX.title": "Imbue",
+  "SHOREMAGICIAN-AFFIX.description": "为手牌中的一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]{SharpAmount:diff()}[/blue]。",
+  "SHOREMAGICIAN-AFFIX.selectionScreenPrompt": "选择一张攻击牌以附加[purple]锋利[/purple]。",
+
+  "SHOREMAGICIAN-ABSORB.title": "Absorb",
+  "SHOREMAGICIAN-ABSORB.description": "为手牌中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple][blue]{AdroitAmount:diff()}[/blue]。",
+  "SHOREMAGICIAN-ABSORB.selectionScreenPrompt": "选择一张牌以附加[purple]伶俐[/purple]。",
+
+  "SHOREMAGICIAN-SEA_BREEZE.title": "Sea Breeze",
+  "SHOREMAGICIAN-SEA_BREEZE.description": "回合结束时，若这张牌在你的[gold]手牌[/gold]中，失去{HpLoss:inverseDiff()}点生命。",
+
+  "SHOREMAGICIAN-SPELL_WARD.title": "Spellward",
+  "SHOREMAGICIAN-SPELL_WARD.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n为手牌中的一张技能牌[gold]附魔[/gold]：[purple]灵巧[/purple][blue]{NimbleAmount}[/blue]。",
+  "SHOREMAGICIAN-SPELL_WARD.selectionScreenPrompt": "选择一张技能牌以附加[purple]灵巧[/purple]。",
+
+  "SHOREMAGICIAN-BRIEF_INCANTATION.title": "Cantrip",
+  "SHOREMAGICIAN-BRIEF_INCANTATION.description": "你的下一张[gold]附魔[/gold]牌的附魔效果翻倍。",
+
+  "SHOREMAGICIAN-ARCANE_GUIDANCE.title": "Spell Conduit",
+  "SHOREMAGICIAN-ARCANE_GUIDANCE.description": "造成{Damage:diff()}点伤害。\n给予目标相当于你[gold]手牌[/gold]中[gold]附魔[/gold]牌数量+1层的[gold]易伤[/gold]。",
+
+  "SHOREMAGICIAN-REVERSION.title": "Unweave",
+  "SHOREMAGICIAN-REVERSION.description": "清除手牌中一张牌的[gold]附魔[/gold]，获得{Energy:energyIcons()}。{IfUpgraded:show:\n将此牌从本场战斗中移除。|}",
+  "SHOREMAGICIAN-REVERSION.selectionScreenPrompt": "选择一张带有[gold]附魔[/gold]的牌将其清除。",
+
+  "SHOREMAGICIAN-OVERFLOW.title": "Overflow",
+  "SHOREMAGICIAN-OVERFLOW.description": "对所有敌人造成{Damage:diff()}点伤害三次。",
+
+  "SHOREMAGICIAN-PHANTOM_SHOCK.title": "Dread Mirage",
+  "SHOREMAGICIAN-PHANTOM_SHOCK.description": "获得{Block:diff()}点[gold]格挡[/gold]两次。\n给予所有敌人{WeakPower:diff()}层[gold]虚弱[/gold]。",
+
+  "SHOREMAGICIAN-CHARGE_ENERGY.title": "Mana Charge",
+  "SHOREMAGICIAN-CHARGE_ENERGY.description": "在本回合内获得{TempMagicPower:diff()}点[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-EXHAUSTING_STRIKE.title": "All-Out Strike",
+  "SHOREMAGICIAN-EXHAUSTING_STRIKE.description": "造成{Damage:diff()}点伤害。\n本回合内其他卡牌耗能增加1点。",
+
+  "SHOREMAGICIAN-TRIBUTARY.title": "Tributary",
+  "SHOREMAGICIAN-TRIBUTARY.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]变化[/gold]{Cards:diff()}张手牌。",
+  "SHOREMAGICIAN-TRIBUTARY.selectionScreenPrompt": "选择要[gold]变化[/gold]的牌。",
+
+  "SHOREMAGICIAN-MANA_STRIKE.title": "Arcane Strike",
+  "SHOREMAGICIAN-MANA_STRIKE.description": "造成{Damage:diff()}点伤害。\n手牌中每有一张其他[gold]附魔[/gold]牌，额外造成{BonusDamage:diff()}点伤害。",
+
+  "SHOREMAGICIAN-STAGNANT_MISSILE.title": "Stasis Bolt",
+  "SHOREMAGICIAN-STAGNANT_MISSILE.description": "给予目标[gold]缓慢[/gold]。\n造成{Damage:diff()}点伤害。",
+
+  "SHOREMAGICIAN-CONVERGE_IMPACT.title": "Coalescing Blast",
+  "SHOREMAGICIAN-CONVERGE_IMPACT.description": "造成{Damage:diff()}点伤害两次。\n清除手牌中至多3张牌的[gold]附魔[/gold]；打出结算后，将本牌的[gold]附魔[/gold]变为[purple]锋利[/purple][blue]{SharpBase:diff()}[/blue]（每清除一张额外+1点）。",
+  "SHOREMAGICIAN-CONVERGE_IMPACT.selectionScreenPrompt": "选择至多3张[gold]附魔[/gold]牌以清除其附魔。",
+
+  "SHOREMAGICIAN-QUAKE.title": "Earthshaker",
+  "SHOREMAGICIAN-QUAKE.description": "对所有敌人造成{Damage:diff()}点伤害。\n击破敌人的[gold]格挡[/gold]可使其[gold]眩晕[/gold]。",
+
+  "SHOREMAGICIAN-SUBLIMATION_EXTRACT.title": "Sublimate",
+  "SHOREMAGICIAN-SUBLIMATION_EXTRACT.description": "造成{Damage:diff()}点伤害。\n清除手牌中一张牌的[gold]附魔[/gold]或[gold]升级[/gold]，你的下{FreeEnchantedCardsPower:diff()}张[gold]附魔[/gold]牌耗能变为0。",
+  "SHOREMAGICIAN-SUBLIMATION_EXTRACT.selectionScreenPrompt": "选择一张带有[gold]附魔[/gold]或[gold]升级[/gold]的牌将其清除。",
+
+  "SHOREMAGICIAN-TRIGGER.title": "Trigger",
+  "SHOREMAGICIAN-TRIGGER.description": "随机打出一张手牌中无[gold]附魔[/gold]的技能牌{IfUpgraded:show:（优先打出高费牌）|}，并为其附加[purple]伶俐[/purple][blue]{AdroitAmount}[/blue]。",
+
+  "SHOREMAGICIAN-LIBERATION.title": "Deliverance",
+  "SHOREMAGICIAN-LIBERATION.description": "造成{Damage:diff()}点伤害。\n目标每有一种负面效果，本牌的[purple]锋利[/purple]附魔效应增加100%。",
+
+  "SHOREMAGICIAN-THORN_TRAP.title": "Runic Snare",
+  "SHOREMAGICIAN-THORN_TRAP.description": "造成{Damage:diff()}点伤害。\n选择[gold]消耗堆[/gold]中的一张[gold]附魔[/gold]牌打出。",
+  "SHOREMAGICIAN-THORN_TRAP.selectionScreenPrompt": "选择[gold]消耗堆[/gold]中的一张[gold]附魔[/gold]牌打出。",
+
+  "SHOREMAGICIAN-MASTERSTROKE.title": "Masterstroke",
+  "SHOREMAGICIAN-MASTERSTROKE.description": "造成{Damage:diff()}点伤害。\n若本回合内[gold]变化[/gold]出过攻击牌，获得{Energy:energyIcons()}。",
+
+  "SHOREMAGICIAN-PRISM_TRAIL.title": "Prismatic Wake",
+  "SHOREMAGICIAN-PRISM_TRAIL.description": "造成{Damage:diff()}点伤害。\n抽{Cards:diff()}张牌。\n将2张手牌[gold]变化[/gold]为同类型的[gold]稀有[/gold]牌。",
+  "SHOREMAGICIAN-PRISM_TRAIL.selectionScreenPrompt": "选择2张手牌[gold]变化[/gold]为同类型稀有牌。",
+
+  "SHOREMAGICIAN-SURGE.title": "Tidal Wave",
+  "SHOREMAGICIAN-SURGE.description": "对所有敌人造成{Damage:diff()}点伤害两次。\n为手牌中所有攻击牌附加1~5点随机[purple]锋利[/purple]。",
+
+  "SHOREMAGICIAN-BROWSE.title": "Peruse",
+  "SHOREMAGICIAN-BROWSE.description": "抽{Cards:diff()}张牌。\n弃掉所有无[gold]附魔[/gold]的手牌，每弃一张获得{Block:diff()}点[gold]格挡[/gold]。",
+
+  "SHOREMAGICIAN-STILL_WATER_GRACE.title": "Still Waters",
+  "SHOREMAGICIAN-STILL_WATER_GRACE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n本回合[gold]保留[/gold]所有带有[gold]附魔[/gold]的手牌。",
+
+  "SHOREMAGICIAN-TEMPERANCE.title": "Measured Flow",
+  "SHOREMAGICIAN-TEMPERANCE.description": "抽{Cards:diff()}张牌。\n下回合开始时多抽{NextTurnDraw}张牌。\n本回合不允许再抽牌。",
+
+  "SHOREMAGICIAN-DRAW_WATER.title": "Tap the Well",
+  "SHOREMAGICIAN-DRAW_WATER.description": "获得{Energy:energyIcons()}。\n获得{WeakPower:diff()}层[gold]虚弱[/gold]和{VulnerablePower:diff()}层[gold]易伤[/gold]。",
+
+  "SHOREMAGICIAN-TWILIGHT_WARD.title": "Twilight Veil",
+  "SHOREMAGICIAN-TWILIGHT_WARD.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n对所有意图为攻击的敌人施加{WeakPower:diff()}层[gold]虚弱[/gold]和1层[gold]缓慢[/gold]。",
+
+  "SHOREMAGICIAN-DREDGE.title": "Scour",
+  "SHOREMAGICIAN-DREDGE.description": "[gold]变化[/gold]至多{TransformCount}张手牌。\n抽{Cards:diff()}张牌。",
+  "SHOREMAGICIAN-DREDGE.selectionScreenPrompt": "选择至多3张要[gold]变化[/gold]的牌。",
+
+  "SHOREMAGICIAN-ACCELERATE.title": "Quicken",
+  "SHOREMAGICIAN-ACCELERATE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n为手牌中的一张牌[gold]附魔[/gold]：[purple]迅捷[/purple][blue]{SwiftAmount}[/blue]。",
+  "SHOREMAGICIAN-ACCELERATE.selectionScreenPrompt": "选择一张牌以附加[purple]迅捷[/purple]。",
+
+  "SHOREMAGICIAN-SPELL_NODE.title": "Spell Node",
+  "SHOREMAGICIAN-SPELL_NODE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n打出后往[gold]抽牌堆[/gold]和[gold]弃牌堆[/gold]各加入一张复制品。",
+
+  "SHOREMAGICIAN-AWAKEN.title": "Clarity",
+  "SHOREMAGICIAN-AWAKEN.description": "[gold]消耗[/gold]手牌中{IfUpgraded:show:任意数量|所有}无[gold]附魔[/gold]的牌，每消耗一张获得{Block:diff()}点[gold]格挡[/gold]。",
+  "SHOREMAGICIAN-AWAKEN.selectionScreenPrompt": "选择要[gold]消耗[/gold]的无附魔牌。",
+
+  "SHOREMAGICIAN-DAZZLING_FLASH.title": "Dazzling Flash",
+  "SHOREMAGICIAN-DAZZLING_FLASH.description": "给予所有敌人{WeakPower:diff()}层[gold]虚弱[/gold]。\n获得{MagicPower:diff()}点[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-RESONANCE.title": "Attunement",
+  "SHOREMAGICIAN-RESONANCE.description": "抽{Cards:diff()}张牌。\n为手牌中至多3张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]{SharpAmount}[/blue]。",
+  "SHOREMAGICIAN-RESONANCE.selectionScreenPrompt": "选择至多3张攻击牌以附加[purple]锋利[/purple]。",
+
+  "SHOREMAGICIAN-TURN_ILL_TO_GOOD.title": "Silver Lining",
+  "SHOREMAGICIAN-TURN_ILL_TO_GOOD.description": "每回合首次抽到诅咒牌时，获得{TurnIllToGoodPower:diff()}点[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-RED_TIDE.title": "Red Tide",
+  "SHOREMAGICIAN-RED_TIDE.description": "当你[gold]变化[/gold]牌、移除或添加[gold]附魔[/gold]时，获得{RedTidePower:diff()}点[gold]格挡[/gold]（每回合最多4次）。",
+
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY.title": "Compendium",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY.description": "战斗结束时，获得{ExperienceSummaryPower:diff()}项奖励：为[gold]牌组[/gold]中的一张牌[gold]附魔[/gold]：[purple]伶俐[/purple][blue]{AdroitAmount:diff()}[/blue]。",
+  "SHOREMAGICIAN-EXPERIENCE_SUMMARY.selectionScreenPrompt": "选择牌组中的一张牌以附加[purple]伶俐[/purple]。",
+
+  "SHOREMAGICIAN-SPELL_DISCIPLINE.title": "Arcane Discipline",
+  "SHOREMAGICIAN-SPELL_DISCIPLINE.description": "获得{MagicGain}点[gold]魔力强度[/gold]。\n在你的回合开始时，多抽{SpellDisciplinePower:diff()}张牌。",
+
+  "SHOREMAGICIAN-MOON_OF_LIGHTHOUSE.title": "Moonlit Beacon",
+  "SHOREMAGICIAN-MOON_OF_LIGHTHOUSE.description": "每当你[gold]变化[/gold]诅咒牌时，将其变为随机一张[gold]燃料[/gold]、[gold]仆从捐躯[/gold]、[gold]喜悦[/gold]、[gold]灵魂[/gold]或[gold]晕眩[/gold]。",
+
+  "SHOREMAGICIAN-CALLOUSED_SKIN.title": "Calloused Skin",
+  "SHOREMAGICIAN-CALLOUSED_SKIN.description": "{IfUpgraded:show:每次失去生命时，少失去1点生命。|“海风”诅咒无法对你造成伤害。}\n每[gold]消耗[/gold]一张诅咒或状态牌，获得{MagicGain}点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-PREEMPTIVE_VOICE.title": "Prelude",
+  "SHOREMAGICIAN-PREEMPTIVE_VOICE.description": "每回合打出的第一张[gold]附魔[/gold]牌的附魔效果翻倍。",
+
+  "SHOREMAGICIAN-OCEAN_CURRENT.title": "Ocean Current",
+  "SHOREMAGICIAN-OCEAN_CURRENT.description": "每当你抽到诅咒牌时，继续抽牌直至手牌抽满或抽到一张未被[gold]附魔[/gold]的牌。",
+
+  "SHOREMAGICIAN-WEIRD_WAVE.title": "Uncanny Ripple",
+  "SHOREMAGICIAN-WEIRD_WAVE.description": "抽{Cards:diff()}张牌。\n打出后本回合所有[gold]奇异浪花[/gold]耗能加1。\n在[gold]抽牌堆[/gold]和[gold]弃牌堆[/gold]中各加入一张此牌的复制。",
+
+  "SHOREMAGICIAN-RESONANT_MAGIC.title": "Harmonics",
+  "SHOREMAGICIAN-RESONANT_MAGIC.description": "本回合每打出一张[gold]附魔[/gold]牌后，获得{ResonantMagicPower:diff()}点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-WATER_MIRROR.title": "Mirror Pool",
+  "SHOREMAGICIAN-WATER_MIRROR.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n从其他角色的技能牌中随机选取{CardCount:diff()}张加入[gold]手牌[/gold]{IfUpgraded:show:（均获得[gold]虚无[/gold]）|}。",
+
+  "SHOREMAGICIAN-SPELL_INFUSION.title": "Spell Infusion",
+  "SHOREMAGICIAN-SPELL_INFUSION.description": "选择[gold]手牌[/gold]中的一张攻击牌，消除其[gold]附魔[/gold]并为其附加[purple]锋利[/purple][blue]{Multiplier}×{IfUpgraded:show:(X+1)|X}[/blue]。",
+  "SHOREMAGICIAN-SPELL_INFUSION.selectionScreenPrompt": "选择一张攻击牌，消除其[gold]附魔[/gold]并附加[purple]锋利[/purple]。",
+
+  "SHOREMAGICIAN-CONVERGENCE.title": "Confluence",
+  "SHOREMAGICIAN-CONVERGENCE.description": "选择[gold]抽牌堆[/gold]中的一张牌；当其进入[gold]手牌[/gold]时，获得{Energy:energyIcons()}并抽{Cards:diff()}张牌。",
+  "SHOREMAGICIAN-CONVERGENCE.selectionScreenPrompt": "选择[gold]抽牌堆[/gold]中的一张牌作为[gold]收束[/gold]目标。",
+
+  "SHOREMAGICIAN-PANNING.title": "Sluice",
+  "SHOREMAGICIAN-PANNING.description": "为[gold]手牌[/gold]中的一张牌[gold]附魔[/gold]：[purple]华彩[/purple]。",
+  "SHOREMAGICIAN-PANNING.selectionScreenPrompt": "选择一张[gold]手牌[/gold]以附加[purple]华彩[/purple]。",
+
+  "SHOREMAGICIAN-DRY_SEA_STONE.title": "Rock of Ages",
+  "SHOREMAGICIAN-DRY_SEA_STONE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n为{EnchantCount:diff()}张[gold]手牌[/gold][gold]附魔[/gold]：[purple]稳定[/purple]。",
+  "SHOREMAGICIAN-DRY_SEA_STONE.selectionScreenPrompt": "选择要附加[purple]稳定[/purple]的[gold]手牌[/gold]。",
+
+  "SHOREMAGICIAN-WEATHERING.title": "Weathering",
+  "SHOREMAGICIAN-WEATHERING.description": "[gold]消耗[/gold][gold]抽牌堆[/gold]和[gold]手牌[/gold]中的所有诅咒牌。\n随后往[gold]弃牌堆[/gold]中加入{SeaBreezeCount:inverseDiff()}张[gold]海风[/gold]。",
+
+  "SHOREMAGICIAN-ENTER_DREAM.title": "Drift Off",
+  "SHOREMAGICIAN-ENTER_DREAM.description": "往[gold]弃牌堆[/gold]中加入一张[gold]睡眠不佳[/gold]。\n往[gold]抽牌堆[/gold]中加入{SoulCount:diff()}张[gold]灵魂{IfUpgraded:show:+|}[/gold]。",
+
+  "SHOREMAGICIAN-FICKLE_SKY.title": "Sunshower",
+  "SHOREMAGICIAN-FICKLE_SKY.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n将[gold]弃牌堆[/gold]中至多{EnchantCount:diff()}张牌的[gold]附魔[/gold]改为[purple]播种[/purple][blue]1[/blue]。",
+  "SHOREMAGICIAN-FICKLE_SKY.selectionScreenPrompt": "选择[gold]弃牌堆[/gold]中至多2张牌将其[gold]附魔[/gold]改为[purple]播种[/purple]。",
+
+  "SHOREMAGICIAN-MANA_OVERLOAD.title": "Mana Overload",
+  "SHOREMAGICIAN-MANA_OVERLOAD.description": "往[gold]抽牌堆[/gold]中加入一张[gold]虚空[/gold]。\n获得{MagicPower:diff()}点[gold]魔力强度[/gold]和{Block:diff()}点[gold]格挡[/gold]。",
+
+  "SHOREMAGICIAN-SEA_BREEZE_CIRCULATION.title": "Trade Winds",
+  "SHOREMAGICIAN-SEA_BREEZE_CIRCULATION.description": "[gold]消耗[/gold]手中任意张牌，每消耗一张[gold]海风[/gold]获得{MagicPower:diff()}点[gold]魔力强度[/gold]。\n随后往[gold]弃牌堆[/gold]中加入等同于消耗牌数的[gold]海风[/gold]。",
+  "SHOREMAGICIAN-SEA_BREEZE_CIRCULATION.selectionScreenPrompt": "选择要[gold]消耗[/gold]的[gold]手牌[/gold]。",
+
+  "SHOREMAGICIAN-TWIST_FATE.title": "Twist Fate",
+  "SHOREMAGICIAN-TWIST_FATE.description": "取消[gold]弃牌堆[/gold]中所有[gold]附魔[/gold]，[gold]消耗[/gold][gold]弃牌堆[/gold]中所有诅咒牌。\n若至少消耗了一张诅咒牌，获得{IntangiblePower:diff()}层[gold]无实体[/gold]。",
+
+  "SHOREMAGICIAN-STAND_ALONE.title": "Solitude",
+  "SHOREMAGICIAN-STAND_ALONE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n将[gold]弃牌堆[/gold]中一张牌放至[gold]抽牌堆[/gold]底，下次可免费打出一次。",
+  "SHOREMAGICIAN-STAND_ALONE.selectionScreenPrompt": "选择一张[gold]弃牌堆[/gold]中的牌放至[gold]抽牌堆[/gold]底并下次免费打出。",
+
+  "SHOREMAGICIAN-VOYAGE.title": "Set Sail",
+  "SHOREMAGICIAN-VOYAGE.description": "失去{DexterityPower:diff()}点[gold]敏捷[/gold]。\n获得{RetainHandPower:diff()}回合[gold]保留[/gold][gold]手牌[/gold]效果。",
+
+  "SHOREMAGICIAN-BAY_TIDE.title": "King Tide",
+  "SHOREMAGICIAN-BAY_TIDE.description": "下回合开始时少抽{NextTurnLessDrawPower:diff()}张牌。\n你本回合造成的伤害翻倍。",
+
+  "SHOREMAGICIAN-CLEAR_INJUSTICE.title": "Vindication",
+  "SHOREMAGICIAN-CLEAR_INJUSTICE.description": "本回合你每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽{ClearInjusticePower:diff()}张牌并获得{ClearInjusticePower:diff()}点临时[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-WESTERLY_CURRENT.title": "West Wind Drift",
+  "SHOREMAGICIAN-WESTERLY_CURRENT.description": "本回合你每[gold]变化[/gold]、[gold]消耗[/gold]或[gold]附魔[/gold]一张牌，对所有敌人造成{WesterlyCurrentPower:diff()}点伤害。",
+
+  "SHOREMAGICIAN-OBLIVION.title": "Efface",
+  "SHOREMAGICIAN-OBLIVION.description": "将[gold]抽牌堆[/gold]中至多{TransformCount:diff()}张牌[gold]变化[/gold]为[gold]海风[/gold]。",
+  "SHOREMAGICIAN-OBLIVION.selectionScreenPrompt": "选择[gold]抽牌堆[/gold]中至多3张牌[gold]变化[/gold]为[gold]海风[/gold]。",
+
+  "SHOREMAGICIAN-FLY_BOMB.title": "Magic! Missiles!",
+  "SHOREMAGICIAN-FLY_BOMB.description": "[gold]消耗[/gold][gold]弃牌堆[/gold]的所有牌。\n每消耗一张[gold]附魔[/gold]牌随机对敌人造成{Damage:diff()}点伤害（当前[blue]{CalculatedHits:diff()}[/blue]次）；\n每消耗一张[gold]海风[/gold]对敌全体施加1层永久减少[gold]力量[/gold]。",
+
+  "SHOREMAGICIAN-ATTRITION_WAR.title": "War of Attrition",
+  "SHOREMAGICIAN-ATTRITION_WAR.description": "造成{Damage:diff()}点伤害。\n[gold]升级[/gold][gold]手牌[/gold]中所有牌，并将此牌放回至[gold]抽牌堆[/gold]顶。",
+
+  "SHOREMAGICIAN-LOCAL_TSUNAMI.title": "Flash Tsunami",
+  "SHOREMAGICIAN-LOCAL_TSUNAMI.description": "对所有敌人造成{Damage:diff()}点伤害，然后[gold]眩晕[/gold]当前生命值低于{HpThreshold:diff()}的敌人。",
+
+  "SHOREMAGICIAN-UNDERCURRENT_STRIKE.title": "Undertow Strike",
+  "SHOREMAGICIAN-UNDERCURRENT_STRIKE.description": "造成{Damage:diff()}点伤害。\n打出后将此牌的[purple]锋利[/purple]数值翻倍。{IfUpgraded:show:\n本场战斗第一次打出后，耗能减1。|}",
+
+  "SHOREMAGICIAN-HOT_SPRING.title": "Geyser",
+  "SHOREMAGICIAN-HOT_SPRING.description": "清除自身所有[gold]虚弱[/gold]后，对敌全体造成X次{Damage:diff()}点伤害。",
+
+  "SHOREMAGICIAN-CAST_HEX.title": "Malediction",
+  "SHOREMAGICIAN-CAST_HEX.description": "造成{Damage:diff()}点伤害。\n给予目标{WeakPower:diff()}层[gold]虚弱[/gold]、{VulnerablePower:diff()}层[gold]易伤[/gold]和[gold]缓慢[/gold]。",
+
+  "SHOREMAGICIAN-MORPH_STRIKE.title": "Shifting Strike",
+  "SHOREMAGICIAN-MORPH_STRIKE.description": "造成{Damage:diff()}点伤害，抽{Cards:diff()}张牌。\n[gold]变化[/gold]至多{TransformCount:diff()}张[gold]手牌[/gold]，将一张[gold]手牌[/gold]的[gold]附魔[/gold]变为[purple]稳定[/purple]。",
+  "SHOREMAGICIAN-MORPH_STRIKE.selectionScreenPrompt": "选择至多2张要[gold]变化[/gold]的[gold]手牌[/gold]。",
+  "SHOREMAGICIAN-MORPH_STRIKE.enchantPrompt": "选择一张[gold]手牌[/gold]将其[gold]附魔[/gold]改为[purple]稳定[/purple]。",
+
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA.title": "Rivers to the Sea",
+  "SHOREMAGICIAN-ALL_RIVERS_TO_SEA.description": "[gold]变化[/gold]牌时，白卡变为蓝卡，蓝卡变为金卡，金卡可以变为塔罗牌或其他角色的0费金卡。{IfUpgraded:show:\n其他角色的金卡附加[gold]虚无[/gold]。|}",
+
+  "SHOREMAGICIAN-MYRIAD_PHENOMENA.title": "Myriad",
+  "SHOREMAGICIAN-MYRIAD_PHENOMENA.description": "每回合多抽{MyriadPhenomenaPower:diff()}张牌，每回合打出的第一张牌放至[gold]抽牌堆[/gold]底。",
+
+  "SHOREMAGICIAN-SPELL_OBSESSION.title": "Arcane Obsession",
+  "SHOREMAGICIAN-SPELL_OBSESSION.description": "失去{StatLoss:inverseDiff()}点[gold]力量[/gold]和[gold]敏捷[/gold]。\n获得{MagicPower:diff()}点[gold]魔力强度[/gold]。",
+
+  "SHOREMAGICIAN-CROUCHING_TIGER.title": "Crouching Tiger",
+  "SHOREMAGICIAN-CROUCHING_TIGER.description": "具有[gold]缓慢[/gold]的敌人，受到的[gold]易伤[/gold]和[gold]虚弱[/gold]影响翻倍。",
+
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND.title": "Sifting Tide",
+  "SHOREMAGICIAN-GREAT_WAVES_WASH_SAND.description": "每回合首次产生[gold]海风[/gold]时，获得{GreatWavesWashSandPower:diff()}点能量。{IfUpgraded:show:\n你可以1费打出并[gold]消耗[/gold][gold]海风[/gold]。|}",
+
+  "SHOREMAGICIAN-FOUNTAIN_REPAY.title": "Spring's Bounty",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY.description": "接下来的{FountainRepayPower}回合中分别各自未花费超过[blue]3[/blue]点能量，战斗胜利后可为牌组一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]。",
+  "SHOREMAGICIAN-FOUNTAIN_REPAY.selectionScreenPrompt": "选择牌组中的一张牌以附加[purple]完美契合[/purple]。",
+
+  "SHOREMAGICIAN-XIAOXIANG.title": "River of Reverie",
+  "SHOREMAGICIAN-XIAOXIANG.description": "每回合额外获得{XiaoxiangPower:diff()}点能量。\n将一张[gold]执迷[/gold]放入[gold]抽牌堆[/gold]底。",
+
+  "SHOREMAGICIAN-VORTEX_FORM.title": "Maelstrom Form",
+  "SHOREMAGICIAN-VORTEX_FORM.description": "从[gold]弃牌堆[/gold]选取任意张牌加入[gold]手牌[/gold]，[gold]消耗[/gold][gold]抽牌堆[/gold]中至多{ExhaustCount:diff()}张牌。\n本场战斗你的手牌打出后回到[gold]抽牌堆[/gold]底。",
+  "SHOREMAGICIAN-VORTEX_FORM.selectionScreenPrompt": "选择[gold]弃牌堆[/gold]中任意张牌加入[gold]手牌[/gold]。",
+  "SHOREMAGICIAN-VORTEX_FORM.exhaustPrompt": "选择[gold]抽牌堆[/gold]中至多3张牌将其[gold]消耗[/gold]。",
+
+  "SHOREMAGICIAN-DRIFT_TURN.title": "Slipstream",
+  "SHOREMAGICIAN-DRIFT_TURN.description": "将[gold]手牌[/gold]中一张攻击牌的[gold]附魔[/gold]改为[purple]动量[/purple][blue]{MomentumAmount:diff()}[/blue]，并使其耗能降低1点。",
+  "SHOREMAGICIAN-DRIFT_TURN.selectionScreenPrompt": "选择一张攻击牌将其[gold]附魔[/gold]改为[purple]动量[/purple]并减1费。",
+
+  "SHOREMAGICIAN-EAST_WIND.title": "East Wind",
+  "SHOREMAGICIAN-EAST_WIND.description": "抽{Cards:diff()}张牌。\n每当你洗牌时，对所有敌人施加{EastWindPower:diff()}层[gold]虚弱[/gold]和{EastWindPower:diff()}层[gold]易伤[/gold]。",
+
+  "SHOREMAGICIAN-LEVEE.title": "Seawall",
+  "SHOREMAGICIAN-LEVEE.description": "为[gold]手牌[/gold]中任意张牌[gold]附魔[/gold]：[purple]伶俐[/purple][blue]{AdroitAmount:diff()}[/blue]。",
+  "SHOREMAGICIAN-LEVEE.selectionScreenPrompt": "选择要附加[purple]伶俐[/purple]的[gold]手牌[/gold]。",
+
+  "SHOREMAGICIAN-WUDING_RIVER.title": "River of Flux",
+  "SHOREMAGICIAN-WUDING_RIVER.description": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；\n[gold]变化[/gold]出的牌均带有随机[gold]附魔[/gold]。{IfUpgraded:show:\n[gold]变化[/gold]出的牌均已[gold]升级[/gold]。|}"
+}
