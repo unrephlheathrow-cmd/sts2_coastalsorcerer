@@ -35,6 +35,18 @@ public sealed class MoonSand : ShoreMagicianRelicModel
         return true;
     }
 
+    public override bool TryModifyEnergyCostInCombatLate(CardModel card, decimal originalCost, out decimal modifiedCost)
+    {
+        if (card.Owner == Owner && card is SeaBreeze)
+        {
+            modifiedCost = 0m;
+            return true;
+        }
+
+        modifiedCost = originalCost;
+        return false;
+    }
+
     public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         if (cardPlay.Card.Owner == Owner && cardPlay.Card is SeaBreeze)

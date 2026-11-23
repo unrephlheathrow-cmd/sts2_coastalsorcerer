@@ -22,6 +22,7 @@ public abstract class ColoredShellRelicBase : ShoreMagicianRelicModel
     protected const int TriggerInterval = 3;
 
     private bool _isActivating;
+    private bool _modifiedInCurrentCombat;
     private int _combatRewardsSeen;
 
     protected abstract CardPoolModel TargetCardPool { get; }
@@ -64,6 +65,12 @@ public abstract class ColoredShellRelicBase : ShoreMagicianRelicModel
         InvokeDisplayAmountChanged();
     }
 
+    public override Task BeforeCombatStart()
+    {
+        _modifiedInCurrentCombat = false;
+        return Task.CompletedTask;
+    }
+
     public override bool TryModifyCardRewardOptions(
         Player player,
         List<CardCreationResult> cardRewardOptions,
@@ -75,7 +82,7 @@ public abstract class ColoredShellRelicBase : ShoreMagicianRelicModel
         if (creationOptions.Source != CardCreationSource.Encounter)
             return false;
 
-        if (!IsInTriggeringCombat)
+        if (!IsInTriggeringCombat || _modifiedInCurrentCombat)
             return false;
 
         if (!creationOptions.Flags.HasFlag(CardCreationFlags.IsCardReward)
@@ -91,29 +98,41 @@ public abstract class ColoredShellRelicBase : ShoreMagicianRelicModel
         if (unlockedPowers.Count == 0)
             return false;
 
-        var allowDupes = !unlockedPowers.Any(c => cardRewardOptions.TrueForAll(o => o.Card.Id != c.Id));
+        var card = TryCreateExtraPowerCard(targetPool, creationOptions.RarityOdds, cardRewardOptions, allowDupes: false)
+            ?? TryCreateExtraPowerCard(targetPool, creationOptions.RarityOdds, cardRewardOptions, allowDupes: true);
 
-        var extraOptions = new CardCreationOptions(
-            [targetPool],
-            CardCreationSource.Other,
-            creationOptions.RarityOdds,
-            c => c.Type == CardType.Power && (allowDupes || cardRewardOptions.TrueForAll(o => o.Card.Id != c.Id)))
-            .WithFlags(CardCreationFlags.NoModifyHooks | CardCreationFlags.NoCardPoolModifications);
-
-        var card = CardFactory.CreateForReward(Owner, 1, extraOptions).FirstOrDefault()?.Card;
         if (card == null)
             return false;
 
+        _modifiedInCurrentCombat = true;
         var result = new CardCreationResult(card);
         result.ModifyCard(card, this);
         cardRewardOptions.Add(result);
         return true;
     }
 
+    private CardModel? TryCreateExtraPowerCard(
+        CardPoolModel targetPool,
+        CardRarityOddsType rarityOdds,
+        List<CardCreationResult> existingOptions,
+        bool allowDupes)
+    {
+        var extraOptions = new CardCreationOptions(
+            [targetPool],
+            CardCreationSource.Other,
+            rarityOdds,
+            c => c.Type == CardType.Power && (allowDupes || existingOptions.TrueForAll(o => o.Card.Id != c.Id)))
+            .WithFlags(CardCreationFlags.NoModifyHooks | CardCreationFlags.NoCardPoolModifications);
+
+        return CardFactory.CreateForReward(Owner, 1, extraOptions).FirstOrDefault()?.Card;
+    }
+
     public override Task BeforeCombatRewardOffered(RewardsSet rewards, CombatRoom room)
     {
         if (rewards.Player != Owner)
             return Task.CompletedTask;
+
+        _modifiedInCurrentCombat = false;
 
         if (rewards.Rewards.All(r => r is not CardReward))
             return Task.CompletedTask;

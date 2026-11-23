@@ -66,16 +66,7 @@ public sealed class DriftBottle : ShoreMagicianRelicModel
             return;
 
         var bottomCard = drawCards[^1];
-        Creature? target = null;
-        if (bottomCard.TargetType == TargetType.AnyEnemy)
-        {
-            if (cs.HittableEnemies.Count == 0)
-                return;
-
-            target = Owner.RunState.Rng.CombatTargets.NextItem(cs.HittableEnemies);
-        }
-
         Flash();
-        await CardCmd.AutoPlay(choiceContext, bottomCard, target, AutoPlayType.Default);
+        await CardCmd.AutoPlay(choiceContext, bottomCard, null, AutoPlayType.Default);
     }
 }

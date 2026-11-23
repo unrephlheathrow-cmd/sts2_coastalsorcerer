@@ -7,8 +7,10 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
 using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.TestSupport;
+using ShoreMagician.Code.Commands;
 
 namespace ShoreMagician.Code.Relics;
 
@@ -21,7 +23,7 @@ public sealed class SailclothEnchantRestSiteOption(Player owner) : RestSiteOptio
     public override IEnumerable<string> AssetPaths => [CustomIconPath];
 
     public override bool IsEnabled =>
-        PileType.Deck.GetPile(Owner).Cards.Any(c => ModelDb.Enchantment<Swift>().CanEnchant(c));
+        PileType.Deck.GetPile(Owner).Cards.Any(ShoreMagicianCmd.CanEnchantWith<Swift>);
 
     public override async Task<bool> OnSelect()
     {
@@ -32,13 +34,19 @@ public sealed class SailclothEnchantRestSiteOption(Player owner) : RestSiteOptio
         };
 
         var swift = ModelDb.Enchantment<Swift>();
-        var selected = (await CardSelectCmd.FromDeckForEnchantment(Owner, swift, Sailcloth.SwiftAmount, prefs)).ToList();
+        var selected = (await CardSelectCmd.FromDeckForEnchantment(
+            Owner,
+            swift,
+            Sailcloth.SwiftAmount,
+            c => c != null && ShoreMagicianCmd.CanEnchantWith<Swift>(c),
+            prefs)).ToList();
+
         if (selected.Count == 0)
             return false;
 
         foreach (var card in selected)
         {
-            if (!swift.CanEnchant(card))
+            if (!ShoreMagicianCmd.CanEnchantWith<Swift>(card))
                 continue;
 
             CardCmd.Enchant<Swift>(card, Sailcloth.SwiftAmount);
@@ -53,5 +61,17 @@ public sealed class SailclothEnchantRestSiteOption(Player owner) : RestSiteOptio
 
         Owner.GetRelic<Sailcloth>()?.Flash();
         return true;
+    }
+
+    public override Task DoRemotePostSelectVfx()
+    {
+        SfxCmd.Play("event:/sfx/ui/cards/card_transform");
+        Owner.GetRelic<Sailcloth>()?.Flash();
+        var characterNode = NRestSiteRoom.Instance?.Characters.FirstOrDefault(c => c.Player == Owner);
+        var flashVfx = NRelicFlashVfx.Create(ModelDb.Relic<Sailcloth>());
+        if (flashVfx != null)
+            characterNode?.AddChildSafely(flashVfx);
+
+        return Task.CompletedTask;
     }
 }
