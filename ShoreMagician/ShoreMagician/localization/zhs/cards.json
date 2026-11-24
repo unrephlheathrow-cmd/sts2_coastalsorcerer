@@ -272,5 +272,12 @@
   "SHOREMAGICIAN-LEVEE.selectionScreenPrompt": "选择要附加[purple]伶俐[/purple]的[gold]手牌[/gold]。",
 
   "SHOREMAGICIAN-WUDING_RIVER.title": "无定河",
-  "SHOREMAGICIAN-WUDING_RIVER.description": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；\n[gold]变化[/gold]出的牌均带有随机[gold]附魔[/gold]。{IfUpgraded:show:\n[gold]变化[/gold]出的牌均已[gold]升级[/gold]。|}"
+  "SHOREMAGICIAN-WUDING_RIVER.description": "已[gold]附魔[/gold]的牌可再次[gold]附魔[/gold]（同类数值叠加，不同类替换覆盖）；\n[gold]变化[/gold]出的牌均带有随机[gold]附魔[/gold]。{IfUpgraded:show:\n[gold]变化[/gold]出的牌均已[gold]升级[/gold]。|}",
+
+  "SHOREMAGICIAN-RETRIBUTION.title": "报应",
+  "SHOREMAGICIAN-RETRIBUTION.description": "造成{Damage:diff()}点伤害。\n将[gold]抽牌堆[/gold]中的一张牌[gold]变化[/gold]为[gold]海风[/gold]。",
+  "SHOREMAGICIAN-RETRIBUTION.selectionScreenPrompt": "选择[gold]抽牌堆[/gold]中的一张牌[gold]变化[/gold]为[gold]海风[/gold]。",
+
+  "SHOREMAGICIAN-TRADE_WIND.title": "信风",
+  "SHOREMAGICIAN-TRADE_WIND.description": "所有敌人在本回合失去{StrengthLoss:diff()}点[gold]力量[/gold]。\n往[gold]手牌[/gold]中加入一张[gold]海风[/gold]。"
 }
