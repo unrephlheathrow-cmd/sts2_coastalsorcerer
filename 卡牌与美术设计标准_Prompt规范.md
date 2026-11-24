@@ -23,7 +23,7 @@
   - **错误示范（AI 常见通病）**：像美漫或《暗黑地牢》那样在围巾、绷带、袖子、斗篷上画满细碎的黑色折痕线、零散的小阴影斑块、短排线（`micro-folds, fragmented shadow islands, heavy internal black ink creases, comic hatching`）。
   - **原版正确画法**：
     1. **大块面极简概括（Large Contiguous Flat Shapes）**：每个部位（如帽子、围巾、袖子、斗篷、手掌）只拆分为 **1 块完整的受光主色块 + 1 块完整连贯的大面积暗部色块**（最多不超过 2~3 个大色阶），绝不把阴影打碎成几十个小碎片。
-    2. **外粗内无（Bold Outer Contour, Lineless Internal Shading）**：**仅在角色/物体最外圈保留粗轮廓线 + 亮色外发光描边**；而物体**内部的明暗交界线直接由两个纯色块硬边拼接（不加黑色内部勾线分割）**，衣褶与腕部绷带用宽大简练的色块条带概括，保持画面像矢量剪贴画一样整洁成片。
+    2. **外粗内无（Bold Outer Contour, Lineless Internal Shading）**：**仅在角色/物体最外圈保留粗轮廓线 + 亮色外发光描边**；而物体**内部的明暗交界线直接由两个纯色块硬边拼接（不加黑色内部勾线分割）**，衣褶与腕部绷带用宽大简练的色块条带概括，保持画面像矢量剪贴画一样整洁成片。**严禁生成无意义的描边（NO Meaningless Outlines）**：绝不允许在物体内部的色块、锈迹、水纹、泡沫、金属接缝或明暗交界处添加任何装饰性黑线或无意义的细碎描边！内部结构必须 100% 由纯色块与纯色块硬边直接拼接（如同丝网印刷/剪纸矢量色块）。
     3. **扁平化漫画冲击特效（Flat Graphic Impact FX）**：攻击光束、挥砍残影与受击爆炸星芒采用**内部零渐变的纯平涂亮色/米白色大几何块（Flat cream-white / cyan jagged comic starbursts and tapered beams with clean dark outlines）**，参考原版铁甲战士/静默猎手基础防御卡的极简平涂白光星芒。
 - **彩色发光外轮廓线（Crisp Colored Outer Rim Outline）**：
   - 沿着角色、武器、手部的最外侧轮廓，包裹一圈**干净锐利的高对比亮色外描边**（如深海青蓝背景配**亮青色 `#45F3FF` 外描边**，暖橙红背景配**亮明黄/鲜橙外描边**），将主体从分层斜向平涂色带背景中干净剥离。
@@ -103,9 +103,9 @@
 
 今后生成任何卡牌插画时，采用 **「模块 1（画风底座） + 模块 2（卡牌类型配色） + 模块 3（角色/局部锚点） + 模块 4（单卡具体动作与构图） + 模块 5（负面约束）」** 组合生成：
 
-### 模块 1：杀戮尖塔原版画风底座（所有卡牌必带，重点强化“大色块完整性、去细碎内黑线”）
-> **English Prompt Core (Macro Flat Color Blocks & Unified Shadows)**:
-> `Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art. CRITICAL SHADING RULE: Use large, unified, contiguous flat color blocks (strictly 2 tones per surface: 1 broad lit plane and 1 single connected shadow mass). Do NOT draw small fragmented shadow islands, micro-folds, or complex cloth wrinkles. Keep internal shading boundaries lineless (pure color-block meets color-block without black internal crease lines), reserving bold dark outlines and a crisp high-contrast colored outer rim-light outline ONLY for the outer silhouette of the character and weapon. Flat graphic comic impact effects (solid unshaded cream-white or cyan starbursts and motion arcs). Full-bleed 4:3 horizontal illustration.`
+### 模块 1：杀戮尖塔原版画风底座（所有卡牌必带，重点强化“大色块完整性、严禁生成无意义的描边”）
+> **English Prompt Core (Macro Flat Color Blocks & Strict No-Meaningless-Outlines Rule)**:
+> `Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art. CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 tones per surface: 1 broad lit plane and 1 single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, decorative ink strokes, or sketchy contour lines around internal color patches, surface textures, water ripples, rust, or shading boundaries. Keep all internal surfaces 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold outer contour and a crisp high-contrast colored outer rim-light outline ONLY for the outermost silhouette of the main subject. Flat graphic comic impact effects (solid unshaded cream-white or cyan starbursts and tapered beams). Full-bleed 4:3 horizontal illustration.`
 
 ### 模块 2：按卡牌类型四选一的「背景与光影配色指令」
 - **【选项 2A：攻击牌 Attack —— 炽橙绯红背景 + 青金撞色】**
@@ -128,8 +128,8 @@
 ### 模块 4：单卡动作构图、「80%+ 满幅破框占比」与「严密物理逻辑」指令（按单卡设计填写）
 > `Composition, 80%+ Fill Ratio & Strict Physical Logic: EXTREME TIGHT ZOOM—the main subject (character bust/hands, staff, and primary effect) MUST fill 80%-85% of the entire canvas, bleeding off at least 3 edges of the frame, leaving less than 20% visible background in the gaps. Use tight Z-axis visual folding. [在此填写具体高张力动作与物理因果细节：必须明确规定 ① 唯一受力中心点与碎屑/火花/水花向外飞溅的物理方向；② 所有卡牌/道具与手或法杖的直接物理接触关系，严禁在背景空处悬空画无关联的掉落物].`
 
-### 模块 5：负面排除约束（所有卡牌必带，重点封杀大片空背景、违背物理逻辑的悬浮物、站桩与碎阴影）
-> `Negative Constraints: NO large empty background areas, NO small zoomed-out character floating in the middle of the canvas, NO disconnected floating or randomly falling objects/cards with unclear meaning, NO physically contradictory debris directions, NO static standing idle pose, NO side-by-side layout, NO fragmented small shadows, NO micro-folds, NO internal black ink crease lines, NO comic cross-hatching, NO soft gradient airbrushing, NO card frame, NO borders, NO text, NO watermarks.`
+### 模块 5：负面排除约束（所有卡牌必带，重点封杀无意义描边、大片空背景与碎阴影）
+> `Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black outlines around water ripples or surface textures, NO blurry glowing bokeh dots, NO large empty background areas, NO small zoomed-out character floating in the middle of the canvas, NO disconnected floating or randomly falling objects/cards with unclear meaning, NO physically contradictory debris directions, NO static standing idle pose, NO side-by-side layout, NO fragmented small shadows, NO micro-folds, NO internal black ink crease lines, NO comic cross-hatching, NO soft gradient airbrushing, NO card frame, NO borders, NO text, NO watermarks.`
 
 ---
 
