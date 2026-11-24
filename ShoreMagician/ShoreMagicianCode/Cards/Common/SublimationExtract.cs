@@ -6,14 +6,14 @@ using ShoreMagician.Code.Character;
 using ShoreMagician.Code.Commands;
 using ShoreMagician.Code.Powers;
 
-namespace ShoreMagician.Code.Cards.Uncommon;
+namespace ShoreMagician.Code.Cards.Common;
 
 [Pool(typeof(ShoreMagicianCardPool))]
 public sealed class SublimationExtract : ShoreMagicianCardModel
 {
-    public SublimationExtract() : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public SublimationExtract() : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithDamage(15, 0);
+        WithDamage(10, 0);
         WithPower<FreeEnchantedCardsPower>(1, 1, false);
     }
 

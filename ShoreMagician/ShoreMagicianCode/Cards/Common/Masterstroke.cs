@@ -6,14 +6,14 @@ using ShoreMagician.Code.Abstract;
 using ShoreMagician.Code.Character;
 using ShoreMagician.Code.Core;
 
-namespace ShoreMagician.Code.Cards.Uncommon;
+namespace ShoreMagician.Code.Cards.Common;
 
 [Pool(typeof(ShoreMagicianCardPool))]
 public sealed class Masterstroke : ShoreMagicianCardModel
 {
-    public Masterstroke() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public Masterstroke() : base(2, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithDamage(20, 5);
+        WithDamage(15, 5);
         WithEnergy(2);
         WithEnergyTip();
     }

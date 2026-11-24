@@ -80,8 +80,8 @@
   "SHOREMAGICIAN-NEXT_TURN_LESS_DRAW_POWER.smartDescription": "下回合开始时少抽[blue]{Amount}[/blue]张牌。",
 
   "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.title": "Vindication",
-  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.description": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]X[/blue]张牌并获得[blue]X[/blue]点临时[gold]魔力强度[/gold]。",
-  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.smartDescription": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]{Amount}[/blue]张牌并获得[blue]{Amount}[/blue]点临时[gold]魔力强度[/gold]。",
+  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.description": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]X[/blue]张牌并获得[blue]X[/blue]点[gold]魔力强度[/gold]（本回合最多获得3点）。",
+  "SHOREMAGICIAN-CLEAR_INJUSTICE_POWER.smartDescription": "本回合每[gold]变化[/gold]或[gold]消耗[/gold]一张诅咒牌，抽[blue]{Amount}[/blue]张牌并获得[blue]{Amount}[/blue]点[gold]魔力强度[/gold]（本回合最多获得3点）。",
 
   "SHOREMAGICIAN-WESTERLY_CURRENT_POWER.title": "West Wind Drift",
   "SHOREMAGICIAN-WESTERLY_CURRENT_POWER.description": "本回合每[gold]变化[/gold]、[gold]消耗[/gold]或[gold]附魔[/gold]一张牌，对所有敌人造成[blue]X[/blue]点伤害。",

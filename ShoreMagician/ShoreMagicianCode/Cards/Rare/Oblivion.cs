@@ -26,7 +26,7 @@ public sealed class Oblivion : ShoreMagicianCardModel
             this,
             SelectionScreenPrompt,
             choiceContext,
-            PileType.Draw,
+            PileType.Discard,
             c => c.IsTransformable,
             0,
             maxCount);

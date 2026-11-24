@@ -27,6 +27,7 @@ public sealed class ShoreMagicianModel() : CustomSingletonModel(HookType.Combat)
         public int EnchantedCardsPlayedThisTurn;
         public bool CurseDrawnThisTurn;
         public int RedTideTriggersThisTurn;
+        public int ClearInjusticeMagicGainedThisTurn;
         public bool PreemptiveClaimedInFlight;
         public int DoubleNextReservedCount;
         public List<CardPlaySnapshot> ActivePlays { get; } = [];
@@ -91,6 +92,17 @@ public sealed class ShoreMagicianModel() : CustomSingletonModel(HookType.Combat)
         return true;
     }
 
+    public static int ConsumeClearInjusticeMagicQuota(Player player, int requested, int maxPerTurn = 3)
+    {
+        if (requested <= 0) return 0;
+        var tracker = GetTracker(player);
+        var remaining = maxPerTurn - tracker.ClearInjusticeMagicGainedThisTurn;
+        if (remaining <= 0) return 0;
+        var granted = Math.Min(requested, remaining);
+        tracker.ClearInjusticeMagicGainedThisTurn += granted;
+        return granted;
+    }
+
     public override Task BeforeSideTurnStart(
         PlayerChoiceContext choiceContext,
         CombatSide side,
@@ -109,6 +121,7 @@ public sealed class ShoreMagicianModel() : CustomSingletonModel(HookType.Combat)
             t.EnchantedCardsPlayedThisTurn = 0;
             t.CurseDrawnThisTurn = false;
             t.RedTideTriggersThisTurn = 0;
+            t.ClearInjusticeMagicGainedThisTurn = 0;
             t.PreemptiveClaimedInFlight = false;
             t.DoubleNextReservedCount = 0;
             t.ActivePlays.Clear();

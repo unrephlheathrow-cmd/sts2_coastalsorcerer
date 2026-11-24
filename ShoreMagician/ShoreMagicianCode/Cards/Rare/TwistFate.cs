@@ -20,7 +20,7 @@ public sealed class TwistFate : ShoreMagicianCardModel
     }
 
     protected override bool ShouldGlowGoldInternal =>
-        Owner != null && IsInCombat && Owner.GetDiscardPile().Any(c => c.Type == CardType.Curse);
+        Owner != null && IsInCombat && Owner.GetDiscardPile().Any(c => c.Type is CardType.Curse or CardType.Status);
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
@@ -31,21 +31,21 @@ public sealed class TwistFate : ShoreMagicianCardModel
         foreach (var card in enchantedInDiscard)
             await ShoreMagicianCmd.ClearEnchantment(choiceContext, Owner, card, this);
 
-        var cursesInDiscard = Owner.GetDiscardPile()
-            .Where(c => c.Type == CardType.Curse)
+        var targetsInDiscard = Owner.GetDiscardPile()
+            .Where(c => c.Type is CardType.Curse or CardType.Status)
             .ToList();
 
-        var exhaustedCurses = 0;
-        foreach (var curse in cursesInDiscard)
+        var exhaustedCount = 0;
+        foreach (var target in targetsInDiscard)
         {
-            if (curse.Pile?.Type != PileType.Discard)
+            if (target.Pile?.Type != PileType.Discard)
                 continue;
 
-            await CardCmd.Exhaust(choiceContext, curse);
-            exhaustedCurses++;
+            await CardCmd.Exhaust(choiceContext, target);
+            exhaustedCount++;
         }
 
-        if (exhaustedCurses > 0)
+        if (exhaustedCount > 0)
             await CommonActions.ApplySelf<IntangiblePower>(choiceContext, this);
     }
 }

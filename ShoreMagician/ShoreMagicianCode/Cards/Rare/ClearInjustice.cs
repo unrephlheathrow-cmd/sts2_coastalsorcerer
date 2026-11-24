@@ -15,7 +15,7 @@ public sealed class ClearInjustice : ShoreMagicianCardModel
     {
         WithCostUpgradeBy(-1);
         WithPower<ClearInjusticePower>(1, 0, false);
-        WithTips(_ => [HoverTipFactory.FromPower<TempMagicPower>()]);
+        WithTips(_ => [HoverTipFactory.FromPower<MagicPower>()]);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
