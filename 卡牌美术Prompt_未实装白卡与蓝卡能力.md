@@ -73,95 +73,150 @@ Negative Constraints: NO meaningless outlines, NO decorative internal black line
 
 ---
 
-## 二、未实装白卡（6 张）+ 初始卡（1 张）（全部升级为完整五段式无废描边规范）
+## 二、未实装白卡（9 张）+ 初始卡（1 张）（严守完整五段式无废描边美术规范）
+
+> 当前白卡共 17 张：已实装 8 张（`魔导`、`蓄能`、`眩目闪光`、`竭尽打击`、`溢流`、`幻象震慑`、`回转`、`支流`）；**未实装白卡共 9 张**（含由蓝卡下调至白卡的 `会心一手`、`升华提取`、`疏浚`）+ **未实装初始卡 1 张（`吸纳`）**。以下全部 10 张均严格补全五段式与 `NO meaningless outlines` 规范，可直接复制生图。
+
+---
+
+### A. 白卡攻击（5 张）
 
 ### 1. 魔力打击（`ManaStrike` / *Arcane Strike*，白卡攻击）
+- **机制**：1 费｜造成 `10→13` 伤害；手牌中每有一张其他附魔牌，额外造成 `4` 点伤害。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, decorative crease lines, or sketchy ink strokes inside color patches or slash waves. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly), reserving a bold dark outer contour and a blazing golden-yellow outer rim-light outline ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: Vibrant high-saturation fiery crimson-red and dark-maroon diagonal stripe graphic background.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up where the bandaged hand, brass staff hook, energized cards, and giant crescent slash fill 85% of the frame and bleed off the lower-left and upper-right edges, leaving less than 15% background.
-COMPOSITION & STRICT PHYSICAL LOGIC: From the lower-left, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad lineless grey linen bands swings the curved antique brass sea-hook staff diagonally upward-right in a violent slash. Three glowing neon-purple and electric-cyan enchanted cards lock directly against the outer curve of the brass hook, channeling flat golden-cyan arcs into a colossal, razor-sharp electric-cyan crescent blade wave and a solid unshaded cream-white comic starburst impact at the upper-right. STRICT PHYSICS: All sparks blast strictly rightward along the diagonal slash vector.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, decorative crease lines, or sketchy ink strokes inside bandages, enchanted cards, or slash waves. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a blazing golden-yellow outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white starbursts and sharp cyan lightning streaks).
+BACKGROUND & PALETTE: Vibrant high-saturation fiery crimson-red and dark wine-maroon graphic background patterned with bold flat diagonal speed-line bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up where the bandaged forearm, brass sea-hook staff, stacked enchanted cards, and colossal crescent slash fill 85% of the entire frame and bleed off the lower-left and upper-right edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC: From the lower-left corner, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad lineless grey linen bands swings the curved antique brass sea-hook staff diagonally upward-right in a violent sweeping cleave. STRICT PHYSICAL TETHER & VECTOR: Three crisp navy enchanted cards are fanned tightly against the outer brass hook curve—literally locked onto the metal by glowing neon-purple and electric-cyan energy tethers—channeling flat golden-cyan arcs forward along the swing into a colossal, razor-sharp electric-cyan crescent blade wave and a solid unshaded cream-white comic starburst impact at the upper-right. All shockwaves and sparks blast strictly upward-right along one unified slash vector.
 Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black crease lines on bandages, NO disconnected floating objects, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
+Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black crease lines on bandages, NO disconnected floating cards without physical tether, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
 ### 2. 凝滞的飞弹（`StagnantMissile` / *Stasis Bolt*，白卡攻击）
+- **机制**：2 费｜给予目标缓慢（Slow），造成 `15→17` 伤害。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines or sketchy facet strokes inside the crystal, rings, or snail. Keep all internal shading boundaries 100% lineless, reserving a bold dark outer contour and a bright amber-yellow rim-light outline ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: Vibrant high-saturation burnt-orange and deep wine-red diagonal stripe graphic background.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines or sketchy facet strokes inside the crystal, stasis rings, or snail. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a bright amber-yellow rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white and golden burst shards).
+BACKGROUND & PALETTE: Vibrant high-saturation burnt-orange and deep wine-red graphic background patterned with bold flat diagonal speed-line bands.
 80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 macro close-up filling 85% of the canvas across the main diagonal, bleeding off the upper-left and lower-right edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC (SLAY THE SPIRE VISUAL GAG): Hurtling violently from upper-left toward lower-right is a colossal, faceted electric-cyan and amber stasis crystal harpoon-bolt launched off the tip of an antique brass sea-hook at the upper-left corner. Tightly encircling the missile nose are three flat golden clockwork-ripple rings freezing sharp flat water shards motionless in mid-air. Visual gag with strict aerodynamics: clinging onto the top facet of the speeding crystal bolt is a small flat-shaded glowing seafoam-cyan snail whose eyestalks and speed streaks stream horizontally BACKWARD toward the upper-left.
+COMPOSITION & STRICT PHYSICAL LOGIC (SLAY THE SPIRE VISUAL GAG): Hurtling violently from upper-left toward lower-right is a colossal, geometric-faceted electric-cyan and amber stasis crystal harpoon-bolt launched directly off the pointed tip of an antique brass sea-hook braced in the upper-left corner. Tightly encircling the missile shaft are three flat golden clockwork-ripple rings freezing sharp flat water shards motionless in mid-air. STRICT AERODYNAMIC VISUAL GAG: Clinging firmly with its flat base onto the top facet of the speeding crystal bolt is a small flat-shaded glowing seafoam-cyan snail whose eyestalks and speed streaks stream horizontally BACKWARD toward the upper-left against the forward rush.
 Full-bleed 4:3 horizontal illustration.
 Negative Constraints: NO meaningless outlines, NO internal black lines inside crystal facets or ripples, NO physically contradictory wind direction, NO fragmented small shadows, NO soft gradients, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
-### 3. 法术防备（`SpellWard` / *Spellward*，白卡技能）
+### 3. 会心一手（`Masterstroke` / *Masterstroke*，白卡攻击）
+- **机制**：2 费｜造成 `15→20` 伤害；若本回合内变化出过攻击牌，获得 `2` 点能量。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines inside water barriers, linen wraps, or feather wings. Keep all internal shading boundaries 100% lineless, reserving bold outer contours and a crisp pure-white outer rim-light ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: Vibrant high-saturation electric-cyan and deep Prussian ocean-blue diagonal stripe graphic background.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas, bleeding off the left, right, and bottom edges, leaving less than 15% background.
-COMPOSITION & STRICT PHYSICAL LOGIC (SINGLE UNIFIED ACTION): Curving prominently across the right side is a thick, flat-shaded translucent aqua geometric shield dome deflecting flat bright-orange incoming sparks outward. Sheltered directly behind the shield at the left-center, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad grey bands touches the antique brass sea-hook tip straight onto the center of a held navy skill card, plating the card with sleek, glowing emerald-aqua feather-wing runes and outward white comic sparks.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines, sketchy woodgrain, or fine creases inside the brass hook, grey linen bandages, armor plate, or golden sparks. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a blazing pure-gold outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white and sunny-yellow starburst shards).
+BACKGROUND & PALETTE: High-saturation fiery vermilion-orange and deep crimson-maroon graphic background patterned with bold flat diagonal speed-line bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the entire canvas, bleeding off the lower-left and upper-right edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (ONE-STRIKE DECAPITATION + ENERGY SURGE): From the lower-left, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad lineless grey linen bands thrusts the pointed curved tip of the antique brass sea-hook forward in one surgical masterstroke strike directly into the central weak-point seam of a cracked obsidian-slate armor barrier filling the right side. STRICT PHYSICAL & ENERGY LOGIC: At the exact spear-tip contact point in the upper-center, an exploding cream-white comic starburst splits the dark slab cleanly outward while TWO massive flat sunny-yellow diamond energy sparks erupt backward from the impact crack straight down the curved brass hook back into the sorcerer's gloved wrist as golden surge arcs.
 Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black lines inside water shapes, NO full standing figure, NO disconnected floating cards, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
+Negative Constraints: NO meaningless outlines, NO decorative internal ink lines, NO black crease lines on bandages, NO disconnected floating icons, NO fragmented small shadows, NO soft gradients, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
-### 4. 简短咒语（`BriefIncantation` / *Cantrip*，白卡技能）
+### 4. 升华提取（`SublimationExtract` / *Sublimate*，白卡攻击）
+- **机制**：1 费｜造成 `10` 伤害；清除手牌中一张牌的附魔或升级，你的下 `1→2` 张附魔牌耗能变为 `0`。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink crease lines on the hat, scarf, or wrist wraps. Keep all internal shading boundaries 100% lineless, reserving bold outer contours and a glowing cyan rim-light ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: Intense deep twilight-indigo and royal-violet diagonal stripe graphic background.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme macro close-up filling 85% of the canvas, bleeding off all four edges, leaving less than 15% background.
-COMPOSITION & STRICT PHYSICAL LOGIC: Filling the upper half in tight Z-axis overlap behind the hand are the Coastal Sorcerer's wide-brimmed deep navy wizard hat, broad lineless grey scarf bands, and two playfully narrowed glowing cyan eyes. In the center foreground, their pale blue-grey bandaged hand snaps thumb and middle finger together. Directly at the thumb-finger friction point ignites a crisp flat cream-white and sunny-yellow starburst that projects TWO massive, identical, twin-stacked glowing electric-cyan and neon-magenta diamond arcane frames expanding radially outward.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines inside the rising steam beams, linen wraps, crystal alembic hook, or rune ribbons. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a radiant pure-gold outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white starburst flash).
+BACKGROUND & PALETTE: High-saturation fiery crimson-orange and deep rust-red graphic background patterned with bold flat diagonal bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the bottom-left and top-right edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (ALCHEMICAL EXTRACTION STRIKE): Gripped firmly at the bottom-left by the Coastal Sorcerer's pale blue-grey bandaged hand, a slate-grey card's golden-emerald upgrade crest and neon-purple enchantment seal are stripped cleanly off its surface by the curved antique brass sea-hook sliding directly across the card face. STRICT SINGLE VECTOR PHYSICS: The extracted flat golden-emerald and pure-white radiant essence condenses seamlessly along the curved brass hook tip into ONE razor-sharp, blazing pure-gold and cream-white plasma lance firing diagonally upward-right straight into a dark spiky silhouette edge, detonating a crisp flat starburst impact.
 Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal crease lines, NO letters or numbers, NO symbols inside rings, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO watermarks.
+Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO glass reflection hatching, NO disconnected floating cards without hand/hook contact, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
-### 5. 报应（`Retribution` / *Retribution*，新增白卡攻击）
-- **机制**：1 费｜造成 `15→18` 伤害，将抽牌堆中 1 张牌变为海风。
+### 5. 报应（`Retribution` / *Retribution*，白卡攻击）
+- **机制**：1 费｜造成 `15→18` 伤害；将抽牌堆中的一张牌变化为海风。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines inside splashes, bandages, or cracks. Keep all internal shading boundaries 100% lineless, reserving bold outer contours and a blazing amber-gold rim-light ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: High-saturation fiery crimson-orange to deep maroon diagonal speed-line background.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines inside splashes, bandages, curse wind, or armor cracks. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and a blazing amber-gold rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white starburst).
+BACKGROUND & PALETTE: Vibrant high-saturation fiery crimson-orange to deep wine-maroon graphic background patterned with bold flat diagonal speed-line bands.
 80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the bottom-left and upper-right edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC: From the lower-left edge, the Coastal Sorcerer's pale blue-grey bandaged hand swings the antique brass sea-hook staff forward in a brutal punishing downward cleave, smashing directly through a dark target armor plate at the center-right with a blazing cream-white comic starburst. STRICT RETRIBUTION RECOIL PHYSICS: At the exact impact moment, an eerie pale-mint and abyssal-purple "Sea Breeze" curse wind backlash whips directly OUT of the cracked strike zone along the staff back toward a clean glowing slate card tucked at the lower-left sleeve cuff, slicing and curling the card's corner into dark-teal ghostly wind crescents.
+COMPOSITION & STRICT PHYSICAL LOGIC (PUNISHING STRIKE + CURSE RECOIL): From the lower-left edge, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad lineless grey bands swings the antique brass sea-hook staff forward in a brutal downward cleave, smashing directly through a dark target armor plate at the center-right with a blazing cream-white comic starburst. STRICT RETRIBUTION RECOIL PHYSICS: At the exact impact moment, an eerie pale-mint and abyssal-purple "Sea Breeze" curse wind backlash whips directly OUT of the cracked strike zone back along the brass shaft toward a clean glowing slate card tucked securely in the sorcerer's lower-left sleeve cuff, slicing and curling that card's top corner into dark-teal ghostly wind crescents.
 Full-bleed 4:3 horizontal illustration.
 Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO disconnected floating cards without physical tether, NO fragmented small shadows, NO soft gradients, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
-### 6. 信风（`TradeWind` / *Trade Wind*，新增白卡技能）
-- **机制**：`1→0` 费｜所有敌人本回合失去 `4` 点力量，往手牌加入 1 张海风。
+### B. 白卡技能（4 张）+ 初始技能（1 张）
+
+### 6. 法术防备（`SpellWard` / *Spellward*，白卡技能）
+- **机制**：1 费｜获得 `7→9` 格挡；为手牌中的一张技能牌附魔：灵巧 `3`（Nimble）。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines around wind ribbons, cloth wraps, or weapon shards. Keep all internal shading boundaries 100% lineless, reserving bold outer contours and a glowing seafoam-cyan rim-light ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: Vibrant high-saturation deep ocean-blue and electric-aqua diagonal graphic gale background.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the left, right, and upper-right edges, leaving less than 15% background.
-COMPOSITION & STRICT PHYSICAL LOGIC: From the bottom-left, the Coastal Sorcerer hooks their curved antique brass sea-hook sideways into a rushing, sweeping ribbon of pale seafoam-green and icy-white gale-force trade winds blasting toward the right. STRICT PHYSICS: The howling gale slams head-on into two shadowy, heavy dark-maroon clawed gauntlets / spiked maces approaching from the right, instantly knocking them backward in defeat and breaking their fiery strength sparks cleanly away toward the right edge, while a single trailing dark-teal ghost-wind crescent peels straight off the brass hook into a crisp card held in the sorcerer's lower hand.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines inside water barriers, linen wraps, or feather-wing runes. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and a crisp pure-white outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic deflection sparks (solid unshaded cream-white and bright orange shards).
+BACKGROUND & PALETTE: Vibrant high-saturation electric-cyan and deep Prussian ocean-blue graphic background patterned with bold flat diagonal bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas, bleeding off the left, right, and bottom edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (SINGLE UNIFIED ACTION): Curving prominently across the right side is a thick, flat-shaded translucent aqua geometric water-shield dome deflecting incoming bright-orange sparks strictly outward to the right. Sheltered directly behind the water dome at the left-center, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad grey bands holds the antique brass sea-hook and touches its curved tip straight onto the center of a crisp navy skill card gripped in the lower sleeve cuff, plating the card with sleek, glowing emerald-aqua feather-wing runes and outward cream-white comic sparks.
+Full-bleed 4:3 horizontal illustration.
+Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black lines inside water shapes, NO full standing figure, NO disconnected floating cards, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
+```
+
+---
+
+### 7. 简短咒语（`BriefIncantation` / *Cantrip*，白卡技能）
+- **机制**：`1→0` 费｜你的下一张附魔牌的附魔效果翻倍。
+```text
+Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink crease lines on the hat, scarf, wrist wraps, or diamond frames. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and a glowing electric-cyan rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white starburst flash).
+BACKGROUND & PALETTE: Intense deep twilight-indigo and royal-violet graphic background patterned with bold flat diagonal bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme macro close-up filling 85% of the canvas, bleeding off all four edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (FINGER-SNAP TWIN RESONANCE): Filling the upper half in tight Z-axis overlap behind the foreground hand are the Coastal Sorcerer's wide-brimmed deep navy wizard hat, broad lineless grey scarf bands, and two playfully narrowed glowing electric-cyan eyes. In the center foreground, their pale blue-grey bandaged hand snaps thumb and middle finger together. Directly at the thumb-finger friction point ignites a crisp flat cream-white and sunny-yellow starburst that projects TWO massive, identical, twin-stacked glowing electric-cyan and neon-magenta diamond arcane frames expanding radially outward.
+Full-bleed 4:3 horizontal illustration.
+Negative Constraints: NO meaningless outlines, NO decorative internal crease lines, NO letters or numbers, NO symbols inside rings, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO watermarks.
+```
+
+---
+
+### 8. 疏浚（`Dredge` / *Scour*，白卡技能）
+- **机制**：1 费｜抽 `3→4` 张牌；变化 `3` 张手牌；消耗。
+```text
+Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines inside splashing wave ribbons, bandages, sea-mud, or burning ash wisps. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a crisp pure-white + electric-cyan rim-light outline ONLY for the outermost silhouettes. Flat graphic comic splash droplets and cream-white spray shards.
+BACKGROUND & PALETTE: Vibrant high-saturation electric-cyan and deep Prussian ocean-blue graphic background patterned with bold flat diagonal speed-line bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 macro close-up filling 85% of the canvas, bleeding off the lower-left and upper-right edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (DREDGING UP FROM THE SEABED + TRANSMUTATION & EXHAUST): Plunging aggressively from the upper-left, the Coastal Sorcerer's pale blue-grey bandaged hand drives the curved antique brass sea-hook deep down into a swirling flat dark-indigo seabed silt vortex at the lower-center, hauling upward a dramatic fan of FOUR glowing slate-blue cards bursting upward out of a violent electric-cyan splash. STRICT TRANSFORMATION & EXHAUST PHYSICS: Three of the hauled cards are visibly warping mid-air at their upper edges along the brass hook's glowing purple-teal swirl—shifting into neon-magenta and seafoam-cyan new forms—while the worn outer wooden dredge-scoop / burnt grey parchment edge at the lower-right cleanly dissolves upward into thin pale-ash geometric exhaust embers.
+Full-bleed 4:3 horizontal illustration.
+Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black lines inside water splashes, NO disconnected floating cards outside the hook/water arc, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
+```
+
+---
+
+### 9. 信风（`TradeWind` / *Trade Wind*，白卡技能）
+- **机制**：`1→0` 费｜所有敌人在本回合失去 `4` 点力量；往手牌中加入 `1` 张海风。
+```text
+Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines around wind ribbons, cloth wraps, or weapon shards. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and a glowing seafoam-cyan rim-light outline ONLY for the outermost silhouettes. Flat graphic wind speed-slashes (solid unshaded icy-white and pale seafoam ribbons).
+BACKGROUND & PALETTE: Vibrant high-saturation deep ocean-blue and electric-aqua graphic background patterned with bold flat diagonal gale bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the left, right, and upper-right edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC (OVERPOWERING GALE + SEA BREEZE RESIDUE): From the bottom-left, the Coastal Sorcerer's bandaged hand hooks the curved antique brass sea-hook sideways into a rushing, sweeping ribbon of pale seafoam-green and icy-white gale-force trade winds blasting rightward. STRICT PHYSICS: The howling gale slams head-on into two shadowy, heavy dark-maroon clawed gauntlets and spiked maces lunging from the right, instantly knocking them backward in defeat and stripping their fiery strength sparks cleanly away toward the right edge, while a single trailing dark-teal ghost-wind crescent peels straight off the brass hook into a crisp card held securely in the sorcerer's lower hand.
 Full-bleed 4:3 horizontal illustration.
 Negative Constraints: NO meaningless outlines, NO black outlines around wind streaks, NO internal black crease lines, NO small full-body standing figure, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
 ```
 
 ---
 
-### 7. *(附赠：最后 1 张未实装初始卡)* 吸纳（`Absorb` / *Absorb*，初始技能）
+### 10. *(初始技能)* 吸纳（`Absorb` / *Absorb*，初始技能）
+- **机制**：1 费｜为手牌中的一张牌附魔：伶俐 `4→6`（Adroit）。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines around mist streams, card edges, or linen wraps. Keep all internal shading boundaries 100% lineless, reserving bold outer contours and an electric-cyan rim-light ONLY for the outermost silhouettes.
-BACKGROUND & PALETTE: High-saturation deep Prussian-blue and dark ocean-teal diagonal stripe graphic background.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the lower-left and outer edges, leaving less than 15% background.
-COMPOSITION & STRICT PHYSICAL LOGIC: From the lower-left, a pale blue-grey hand wrapped in 2-3 broad lineless grey linen bands raises the curved antique brass sea-hook around a centered floating slate-blue card. Broad, flat-shaded ribbons of glowing seafoam-cyan and neon-violet sea-mist spiral centripetally INWARD from all corners straight into the face of the card inside the brass hook, igniting a sharp, sleek flat purple-cyan swift-wing rune emblem at its core.
+CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines around mist streams, card edges, or linen wraps. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and an electric-cyan rim-light outline ONLY for the outermost silhouettes. Flat graphic comic absorption sparks (solid unshaded cream-white and bright cyan shards).
+BACKGROUND & PALETTE: High-saturation deep Prussian-blue and dark ocean-teal graphic background patterned with bold flat diagonal bands.
+80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight 4:3 close-up filling 85% of the canvas and bleeding off the lower-left and outer edges, leaving less than 15% visible background.
+COMPOSITION & STRICT PHYSICAL LOGIC: From the lower-left, the Coastal Sorcerer's pale blue-grey hand wrapped in 2-3 broad lineless grey linen bands grips both the curved antique brass sea-hook AND the bottom edge of a large centered slate-blue card framed inside the brass hook arc. Broad, flat-shaded ribbons of glowing seafoam-cyan and neon-violet sea-mist spiral centripetally INWARD from all four edges straight through the brass hook into the face of the held card, igniting a sharp, sleek flat purple-cyan swift-wing rune emblem at its core.
 Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
+Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO disconnected floating cards without hand contact, NO fragmented small shadows, NO soft airbrushing, NO card frame, NO borders, NO text, NO watermarks.
 ```
