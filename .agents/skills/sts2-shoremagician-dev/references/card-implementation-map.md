@@ -31,14 +31,14 @@
 
 | 中文名 | 类名 | 费 | 类型 | 关键实现 |
 |---|---|---:|---|---|
-| 法术防备 | `SpellWard` | 1 | Skill | **`7→9` 防** + 选技能牌 `EnchantCard<Nimble>(3)` |
+| 法术防备 | `SpellWard` | 1 | Skill | **`6→8` 防** + 选技能牌 `EnchantCard<Nimble>(3)` |
 | 简短咒语 | `BriefIncantation` | 1→0 | Skill | 施加 `DoubleNextEnchantmentPower(1)` |
 | 魔导 | `ArcaneGuidance` | 1 | Attack | `7→10` 伤 + 施加 `手牌附魔数+1` 层 `VulnerablePower` |
-| 回转 | `Reversion` | 0 | Skill | **仅清除手牌 1 牌附魔**作前提 → 获 3 费；`Exhaust`（敲后调 `RemoveFromCombat` 本场移除） |
+| 回转 | `Reversion` | 0 | Skill | **不消耗，获 2 费**；敲前清 1 张手牌附魔，**敲后可清附魔或升级（优先附魔）** |
 | 溢流 | `Overflow` | 1 | Attack | 全体 `4→5` 伤 ×3 段，置位 `MarkOverflowPlayed` |
 | 幻象震慑 | `PhantomShock` | 2 | Skill | `5→7` 防 ×2 段 + 全体 `WeakPower(1)` |
 | 蓄能 | `ChargeEnergy` | 1 | Skill | 施加 `TempMagicPower(3)`；敲后 `Retain` |
-| 竭尽打击 | `ExhaustingStrike` | 0 | Attack | `CardTag.Strike`，`12→16` 伤 + `ExhaustingStrikeCostPower`（其他牌加 1 费） |
+| 竭尽打击 | `ExhaustingStrike` | 0 | Attack | `CardTag.Strike`，`11→15` 伤 + `ExhaustingStrikeCostPower`（其他牌加 1 费） |
 | 支流 | `Tributary` | 1 | Skill | `6` 防 + 仅选**手牌中**变化 `1→2` 张 |
 | 魔力打击 | `ManaStrike` | 1 | Attack | `10→13` 伤，手牌每有 1 张**其他附魔牌**额外 `+4`；附魔/溢流/**营养汤**时视作 Strike |
 | 凝滞的飞弹 | `StagnantMissile` | 2 | Attack | 施加**原版全局 `SlowPower(1)`**，随后造成 `15→17` 伤 |
@@ -48,12 +48,12 @@
 ### 4.1 攻击（已实装 8 张）
 | 中文名 | 类名 | 费 | 关键实现 |
 |---|---|---:|---|
-| 聚拢冲击 | `ConvergeImpact` | 1 | `6×2 伤` → 清手牌至多 3 张附魔 → `ReplaceEnchantment<Sharp>(6/8 + 清除数)` |
+| 聚拢冲击 | `ConvergeImpact` | 1 | `5×2 伤` → 清手牌至多 4 张附魔 → `ReplaceEnchantment<Sharp>(清除数 × 6/8)` |
 | 地动 | `Quake` | 3 | 全体 `21→26` 伤；破盾调用 `CreatureCmd.Stun(enemy)` |
 | 升华提取 | `SublimationExtract` | 1 | `15` 伤 + 清 1 牌升级或附魔，施加 `FreeEnchantedCardsPower(1→2)` |
 | 解脱 | `Liberation` | 1 | `13→18` 伤；目标每有 1 种负面，本牌 `Sharp` 效应 +100% |
 | 魔刺陷阱 | `ThornTrap` | 2 | `18→21` 伤；从消耗堆选 1 张附魔牌打出 |
-| 会心一手 | `Masterstroke` | 2 | `20→25` 伤；本回合变化/附魔出攻击牌则回 2 费并亮金光 |
+| 会心一手 | `Masterstroke` | 2 | `14→19` 伤；本回合变化/附魔出攻击牌则回 2 费并亮金光 |
 | 虹光尾迹 | `PrismTrail` | 1 | `Exhaust`，`10→12` 伤，抽 `2→3` 后 `TransformToRareSameType` 变化 2 张手牌 |
 | 浪潮 | `Surge` | 1 | `Exhaust`（敲后去消耗），全体 `8×2` 伤，手牌攻击牌附随机 1~5 `Sharp` |
 
@@ -82,7 +82,7 @@
 | 24 | 收束 | `Convergence` | 1 | `AfterCardChangedPiles` | 选抽牌堆 1 牌，**首次进入手牌（含抽/定向拿）**得 2 费并抽 `2→3` 后失效 |
 | 25 | 淘洗 | `Panning` | 2→1 | `Exhaust`、`Glam` | 选 1 张手牌 `EnchantCard<Glam>(1)` |
 | 26 | 海枯石烂 | `DrySeaStone` | 3→2 | `Steady` | `21` 防；选 2 张手牌 `EnchantCard<Steady>(1)` |
-| 27 | 风化 | `Weathering` | 1 | `Exhaust`、`SeaBreeze` | 消耗抽/手牌中所有诅咒；**无论有无均**往弃牌堆加 `4→3` 张 `SeaBreeze` |
+| 27 | 风化 | `Weathering` | 1 | `Exhaust`、`SeaBreeze` | 消耗抽/手牌中所有诅咒与状态牌；**无论有无均**往弃牌堆加 `4→3` 张 `SeaBreeze` |
 | 28 | 入梦 | `EnterDream` | 1 | `PoorSleep`、`Soul` | 弃牌堆加 1 `PoorSleep`（「睡眠不佳」），抽牌堆加 3 `Soul`（敲后 `Soul+`） |
 | 29 | 道是无晴 | `FickleSky` | **2** | `Sown`、`ReplaceEnchantment` | **`13→15` 防**；**弃牌堆至多 2 牌**经 `ReplaceEnchantment<Sown>(1)` 改为播种（吃法强） |
 | 30 | 魔力过载 | `ManaOverload` | 2 | `Void`、`MagicPower` | 抽牌堆加 1 `Void`，得 1 `MagicPower` 与 `12→15` 防 |
@@ -123,7 +123,7 @@
 | 暗流打击 | `UndercurrentStrike` | 2 | `CardTag.Strike`，打 `25→30`，本牌附魔数值翻倍（视为变化）；敲后本场战斗首次打出减 1 费 |
 | 热泉 | `HotSpring` | X | `Exhaust`、`HasEnergyCostX`，移除自身全部 `WeakPower` 后全体造成 `X` 次 `13→17` 伤 |
 | 下咒 | `CastHex` | 2 | `Ethereal`（敲后去虚无），单体打 `18`，给予 3 虚弱、3 易伤、原版 `SlowPower(3)` |
-| 变幻打击 | `MorphStrike` | 1 | `CardTag.Strike`，打 `15→18`，抽 `2`，变化至多 2 手牌，经 `ReplaceEnchantment<Steady>` 将 1 手牌改为 `Steady` |
+| 变幻打击 | `MorphStrike` | 1 | `CardTag.Strike`，打 `15→18`，抽 `2`，变化至多 2 手牌 |
 
 ### 5.3 能力牌（已录齐 10 / 10 张 [待实现 Phase 3C]）
 | 中文名 | 规范类名 | 对应 Power 类 | 费 | 关键实现 |

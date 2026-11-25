@@ -23,13 +23,13 @@ public sealed class Weathering : ShoreMagicianCardModel
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        var cursesToExhaust = Owner.GetDrawPile()
+        var targetsToExhaust = Owner.GetDrawPile()
             .Concat(Owner.GetHand())
-            .Where(c => c != this && c.Type == CardType.Curse)
+            .Where(c => c != this && c.Type is CardType.Curse or CardType.Status)
             .ToList();
 
-        foreach (var curse in cursesToExhaust)
-            await CardCmd.Exhaust(choiceContext, curse);
+        foreach (var target in targetsToExhaust)
+            await CardCmd.Exhaust(choiceContext, target);
 
         await ShoreMagicianCmd.AddGeneratedCardsToCombat<SeaBreeze>(
             Owner,

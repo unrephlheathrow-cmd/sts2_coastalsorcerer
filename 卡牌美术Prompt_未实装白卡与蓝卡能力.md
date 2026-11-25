@@ -1,79 +1,93 @@
-# Coastal Sorcerer（海岸术士）未实装蓝卡能力与白卡 Prompt 合集（严格无废描边 V3 版）
+# Coastal Sorcerer（海岸术士）未实装蓝卡能力与白卡 Prompt 合集
 
-> **遵循标准**：严格执行 [卡牌与美术设计标准_Prompt规范.md](./卡牌与美术设计标准_Prompt规范.md) 最新五段式硬规范：
-> 1. **两阶连通大色块 + 内部 100% 无黑线 + 严禁生成无意义的描边（NO Meaningless Outlines）**：物体内部色块、水波、铁锈、岩石裂隙之间必须直接由纯色块硬边拼接（丝网印刷/剪纸矢量质感），严禁生成细碎装饰性黑线与内描边。
-> 2. **完整五段式约束（不缩水、不简写）**：每条 Prompt 均包含完整的 `CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE`、`BACKGROUND & PALETTE`、`80%+ FILL RATIO & EDGE-BLEEDING ZOOM`、`COMPOSITION & STRICT PHYSICAL LOGIC` 与 `Negative Constraints`。
-> 3. **已实装进度说明**：蓝卡能力中 **洋流（`OceanCurrent`）**、**灯塔之月（`MoonOfLighthouse`）**、**先声（`PreemptiveVoice`）**、**红色潮汐（`RedTide`）** 已实装；下方第二节为**其余 4 张待实装蓝卡能力**按最新严苛规范重新生成的 Prompt。
+> **蓝卡能力（第一节）已全面升级至 V3 项目锚定标准**（遵循 [卡牌与美术设计标准_Prompt规范.md](./卡牌与美术设计标准_Prompt规范.md) V3，以 `anchor_browse.jpg` 与 `anchor_overflow.jpg` 为风格锚点）：
+> 1. **渲染与线条**：干净的 2D 平涂赛璐珞、2~3 阶硬边色块、细深色外轮廓、内部几乎无线，无笔刷/纹理/渐变喷枪。
+> 2. **角色固定固有色**：深海军蓝帽与斗篷（浅灰锯齿滚边）、浅灰层叠围巾、黑洞脸 + 发光青眼、蓝灰手 + 灰绷带、木杖 + 黄铜钩（每张卡保持一致）。
+> 3. **背景与配色**：背景为简单平面图形（斜条纹 / 放射爆发 / 漩涡 / 单一大形），单一背景色相 + 亮青色特效 + 最多 1 个辅助色。
+> 4. **上传参考图**：每次生成必须上传 `art_refs/style_refs/anchor_browse.jpg` 与 `art_refs/style_refs/anchor_overflow.jpg`（冷色卡把浏览放第一张，暖色/放射卡把溢流放第一张）。
+> 5. **进度说明**：蓝卡能力共 8 张，其中 **洋流（`OceanCurrent`）**、**灯塔之月（`MoonOfLighthouse`）**、**先声（`PreemptiveVoice`）**、**红色潮汐（`RedTide`）**、**粗韧皮肤（`CallousedSkin`）**、**法术规范（`SpellDiscipline`）**、**逢凶化吉（`TurnIllToGood`）** 已实装；目前仅剩 **经验汇总（`ExperienceSummary`）** 1 张待生成（已按新思路改为“高高举起的附魔技能册子”）。
 
 ---
 
-## 一、其余 4 张待实装蓝卡能力（严格规范版 + 非人物创意概念）
+## 一、其余 4 张蓝卡能力（3 张已实装 + 1 张待生成，V3 项目锚定标准）
 
-### 1. 粗韧皮肤（`CallousedSkin` / *Calloused Skin*，蓝卡能力）
+### 1. 粗韧皮肤（`CallousedSkin` / *Calloused Skin*，蓝卡能力）`[已实装]`
 - **机制**：“海风”诅咒无法对你造成伤害（升级后每次失去生命少失 1 点）；每消耗一张诅咒或状态牌，获得临时魔力强度。
-- **创意视觉（背面视角 + 回首 + 背负巨型深海龟壳）**：极近景背面视角——海岸术士背对镜头并微微侧首回眸（宽檐深蓝巫师帽下露出发光青眼与宽幅灰围巾），后背普鲁士蓝斗篷上牢牢背负着一面硕大厚重的几何六边形深海巨龟甲壳；袭向后背的苍白“海风”风刃撞在龟壳弧面上当场崩碎，直接化作金青色魔力火星顺着龟甲亮青接缝被吸收。
+- **V3 视觉设计（背面回眸 + 龟壳挡风刃｜配色 `C4 海风`｜背景 `B1 斜条纹`）**：
+  - 海岸术士侧背对着镜头、回眸从宽檐帽下斜睨观众，神态从容；斗篷背后稳稳背着一面简洁几何六边形深海大龟壳。
+  - 一道苍白薄荷绿的“海风”弯月风刃从右侧劈在龟壳弧面上，毫无损伤地崩碎成几片青色魔力光片弹开。
+- **推荐参考图顺序**：`anchor_browse.jpg`（第 1 张） + `anchor_overflow.jpg`（第 2 张）
 - **Prompt**：
 ```text
-Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black crease lines, decorative ink strokes, or sketchy texture lines inside the turtle shell plates, cloak, scarf, or hat. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a crisp blazing golden-cyan double outer rim-light outline ONLY for the outermost silhouette of the character and turtle shell. Flat graphic comic impact effects (solid unshaded cream-white and golden-cyan geometric sparks).
-BACKGROUND & PALETTE: Intense royal purple (#1D0B46) and deep abyssal-teal dramatic graphic background patterned with bold flat diagonal energy bands.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight rear-view close-up where the Coastal Sorcerer's upper back, their head turning back over the shoulder, and the colossal sea-turtle shell strapped across their back fill 85% of the entire canvas and bleed off the bottom, left, and right edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC (BACK VIEW, LOOKING BACK OVER SHOULDER, SHOWING TURTLE SHELL ON BACK): Viewed from behind, the Coastal Sorcerer wears a massive, heavy, faceted deep-sea turtle shell strapped prominently across the back of their Prussian-blue cloak. The turtle carapace dominates the central foreground, built from 5-6 large, clean, smooth geometric dark-teal and slate-grey hexagonal plates with glowing electric-cyan rune seams between them. Above the turtle shell, the sorcerer turns their head back over their left shoulder to glance toward the viewer—showing the tattered wide-brimmed deep navy wizard hat, broad lineless grey cloth scarf, and two glowing pupil-less cyan eyes in the shadow under the brim. STRICT PHYSICS: Two razor-sharp pale-mint wind crescent blades ("Sea Breeze" curses) slash in from the right and shatter harmlessly against the curved dome of the turtle shell on the sorcerer's back, bursting radially outward into flat golden-yellow and electric-cyan diamond mana sparks.
-Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal black lines inside turtle shell scutes, NO micro-folds or cloth wrinkles, NO front-facing standing pose, NO large empty background areas, NO fragmented small shadow islands, NO comic cross-hatching, NO soft gradient airbrushing, NO blurry bokeh dots, NO card frame, NO borders, NO text, NO watermarks.
+Match the art style, rendering, outline quality and the character design of the attached reference images exactly.
+Slay the Spire style card illustration, clean 2D flat cel-shaded digital art. Bold simple shapes, 2-3 flat tones per surface with hard shadow edges, a thin dark outer outline and almost no interior lines, smooth flat fills with no texture. Expressive cartoon acting and a strong, readable silhouette.
+The Coastal Sorcerer: an oversized floppy deep navy wide-brimmed pointed wizard hat with a bent tip and jagged brim, the face is a dark void with two glowing cyan eyes, a thick layered light grey scarf wrapped over the lower face, a deep navy cloak with pale grey jagged trim, pale blue-grey hands with grey bandaged forearms, a crooked wooden staff topped with a brass question-mark-shaped hook.
+Chest-up back-three-quarter view: the sorcerer wears a large, chunky, simple hexagonal deep-sea turtle shell strapped across their back and calmly glances back over one shoulder toward the viewer. A sweeping pale mint green crescent wind blade slashes from the right and shatters harmlessly against the turtle shell, popping into a few bright cyan diamond shards.
+Effects are bold stylized flat shapes in bright cyan, with pale mint green as the only secondary accent.
+Background: three wide flat diagonal bands in shades of dark teal and near-black green.
+The character fills about half to two-thirds of the frame, focal point in the upper-center; keep the top-left corner and the bottom corners simple. 4:3 horizontal, full-bleed, no frame, no text.
 ```
 
 ---
 
-### 2. 经验汇总（`ExperienceSummary` / *Compendium*，蓝卡能力）
-- **机制**：战斗结束时，获得额外附魔奖励（为牌组中一张牌附魔：伶俐）。
-- **创意视觉（查阅书籍：手指 + 书籍 + 在某一行上画圈）**：极近微距俯拍一本摊开的厚重深蓝魔法典籍，米白书页上整齐排列着数行简练的平涂几何横条（代表书页行文，不生成乱码文字）；海岸术士缠着宽灰绷带的蓝灰手指点在书页中央，指尖正沿着其中**某一行**画出一道耀眼闭合的电光青与亮金色魔力圆圈，被圈住的那一行瞬间点亮并从指尖激起纯白星芒与翠青飞羽符文光带。
+### 2. 经验汇总（`ExperienceSummary` / *Compendium*，蓝卡能力）`[重设思路 · 待生成]`
+- **机制**：战斗结束时，获得额外附魔奖励（为牌组中一张牌附魔：伶俐 `2→3`）。
+- **V3 视觉设计（高举附魔技能册子｜配色 `C3 星紫`｜背景 `B2 放射爆发`）**：
+  - 放弃“低头画圈”，改为呼应「溢流」的仰视高举张力与战后得宝仪式感：海岸术士居中低机位出镜，双臂高高举起过头顶，把一本厚实精装的深蓝金边**附魔技能册子**（微斜展示书脊、金角扣与封面上的简洁金色符文徽记）骄傲地托举在画面中上方。
+  - 一条亮青色附魔光带缠绕着高举的技能册子旋转发光，册子周身迸出几片亮青与金色碎芒；术士外圈带一圈细暖金描边，与深紫放射光环背景干净剥离。
+- **推荐参考图顺序**：`anchor_overflow.jpg`（第 1 张） + `anchor_browse.jpg`（第 2 张）
 - **Prompt**：
 ```text
-Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, decorative ink strokes, paper grain lines, or knuckle wrinkles inside the fingers, wrist bandages, or book pages. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a crisp radiant golden-cyan outer rim-light outline ONLY for the outermost silhouettes of the hand and book. Flat graphic comic impact effects (solid unshaded cream-white starbursts and glowing ring trail).
-BACKGROUND & PALETTE: Intense deep cosmic indigo and neon-magenta to royal-purple graphic background with bold flat diagonal bands.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight macro close-up where the open arcane book and the Coastal Sorcerer's pointing hand and forearm fill 85% of the entire canvas and bleed off the bottom, left, and right edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC (CONSULTING A BOOK: FINGER, BOOK, DRAWING A CIRCLE AROUND ONE SPECIFIC LINE): Filling the lower and central frame at a dynamic angle is an open, thick flat-shaded dark-navy arcane tome with clean cream-white pages. Across the page are 5 neat horizontal rows of simplified flat slate-blue geometric bar blocks (representing lines of text without any actual letters). Reaching in from the lower-right is the Coastal Sorcerer's pale cool blue-grey hand wrapped in 2-3 broad lineless dark-grey linen wrist bands and a Prussian-blue cuff with pale-grey jagged trim. The extended index finger presses onto the middle of the page, actively drawing a glowing, continuous electric-cyan and golden-yellow magic circle loop around ONE specific horizontal line in the center. STRICT PHYSICS: At the exact fingertip contact point where the circle closes around that chosen line, a flat cream-white comic starburst ignites and the circled line blazes with neon-cyan and magenta light, projecting sleek glowing cyan feather-wing rune sparks upward.
-Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal linework, NO black crease lines on fingers or bandages, NO gibberish letters or readable text, NO numbers, NO full character face, NO fragmented small shadows, NO comic cross-hatching, NO soft gradient airbrushing, NO blurry bokeh dots, NO card frame, NO borders, NO watermarks.
+Match the art style, rendering, outline quality and the character design of the attached reference images exactly.
+Slay the Spire style card illustration, clean 2D flat cel-shaded digital art. Bold simple shapes, 2-3 flat tones per surface with hard shadow edges, a thin dark outer outline and almost no interior lines, smooth flat fills with no texture. Expressive cartoon acting and a strong, readable silhouette.
+The Coastal Sorcerer: an oversized floppy deep navy wide-brimmed pointed wizard hat with a bent tip and jagged brim, the face is a dark void with two glowing cyan eyes, a thick layered light grey scarf wrapped over the lower face, a deep navy cloak with pale grey jagged trim, pale blue-grey hands with grey bandaged forearms. A thin warm gold outline separates the character from the background.
+Low-angle chest-up pose: raising both bandaged arms high overhead in triumph, the sorcerer hoists a thick, bound deep-blue enchanted skill booklet aloft into the upper center, angled slightly to show its spine, gold corner clasps, and a simple glowing golden rune emblem on the cover. A bright cyan enchantment ribbon swirls around the raised booklet, popping a few chunky cyan and gold sparks.
+Effects are bold stylized flat shapes in bright cyan, with gold as the only secondary accent.
+Background: a radial burst of wide rays with concentric rings in shades of violet and deep indigo purple, centered behind the raised booklet.
+The character and raised booklet fill about two-thirds of the frame, focal point in the upper-center; keep the top-left corner and the bottom corners simple. 4:3 horizontal, full-bleed, no frame, no text.
 ```
 
 ---
 
-### 3. 法术规范（`SpellDiscipline` / *Arcane Discipline*，蓝卡能力）
-- **机制**：获得魔力强度；在你的回合开始时，多抽牌。
-- **创意视觉（无人物，极简光滑几何黄铜航海浑天仪与青晶节拍摆锤，摒弃细碎齿轮）**：两道干净顺滑的几何古黄铜星盘大环在深紫背景下横跨破框，中央一颗硕大的四切面亮青棱晶摆锤正沿着竖直中轴切过纯白对齐闪光，顺时针摆动直接推动右下黄铜卡槽里的 3 张亮边卡牌整整齐齐向前迈进一格。
+### 3. 法术规范（`SpellDiscipline` / *Arcane Discipline*，蓝卡能力）`[已实装]`
+- **机制**：虚无；打出获得 `2` 点魔力强度；每回合开始时多抽 `1` 张牌。
+- **V3 视觉设计（端正竖杖校准 + 秩序卡牌环｜配色 `C3 星紫`｜背景 `B2 放射爆发`）**：
+  - 海岸术士居中正身出镜、姿态端正克制，双手握住漂流木黄铜海钩法杖垂直立于身前中轴，宛如校准法术的节拍器。
+  - 一道简洁锋利的亮青色几何大圆环环绕在角色身前与法杖交叠，三张金色卡牌顺着圆环轨迹排成等距整齐的队列向前滑行，体现“法术秩序与稳定抽牌”。
+- **推荐参考图顺序**：`anchor_overflow.jpg`（第 1 张） + `anchor_browse.jpg`（第 2 张）
 - **Prompt**：
 ```text
-Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, decorative engravings, tiny gear teeth outlines, or sketchy strokes inside the brass rings or crystal facets. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly with broad geometric cut-out speculars), reserving a bold dark outer contour and a crisp double-layered pure-white and golden-cyan outer rim-light outline ONLY for the outermost silhouette.
-BACKGROUND & PALETTE: Intense royal purple (#1D0B46) and deep indigo symmetrical graphic background with bold flat golden-magenta radiating beams.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme tight close-up where the oversized brass nautical astrolabe rings, the central glowing cyan crystal pendulum, and the synchronized arc of cards fill 85% of the entire canvas and bleed off the top, bottom, and side edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC (CLOCKWORK ARCANE MECHANISM, NO HUMAN CHARACTER): Spanning the full canvas are two massive, clean, smooth geometric antique-brass astrolabe rings intersecting around a vertical centerline. Swinging dead-center across the vertical axis is a large, bold four-faceted electric-cyan crystal metronome pendulum bob that slices right through a flat cream-white alignment flash at the center. STRICT PHYSICS: Driven by the clockwise swing of the central cyan crystal pendulum, three clean, flat-shaded glowing cyan-rimmed cards locked into smooth brass slots along the lower-right ring advance one synchronized step forward along the circular track, trailing sharp flat cyan motion arcs.
-Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO tiny gear teeth clutter, NO decorative internal black linework, NO rust blotches, NO human figure, NO readable numbers or clock digits, NO text, NO fragmented small shadows, NO soft gradient airbrushing, NO card frame, NO borders, NO watermarks.
+Match the art style, rendering, outline quality and the character design of the attached reference images exactly.
+Slay the Spire style card illustration, clean 2D flat cel-shaded digital art. Bold simple shapes, 2-3 flat tones per surface with hard shadow edges, a thin dark outer outline and almost no interior lines, smooth flat fills with no texture. Expressive cartoon acting and a strong, readable silhouette.
+The Coastal Sorcerer: an oversized floppy deep navy wide-brimmed pointed wizard hat with a bent tip and jagged brim, the face is a dark void with two glowing cyan eyes, a thick layered light grey scarf wrapped over the lower face, a deep navy cloak with pale grey jagged trim, pale blue-grey hands with grey bandaged forearms, a crooked wooden staff topped with a brass question-mark-shaped hook.
+Centered symmetrical pose: standing upright with composed posture, the sorcerer holds the hooked staff strictly vertical in front of their chest as a crisp, bold bright cyan circular rune ring orbits around and in front of their body, carrying three glowing golden cards spaced evenly in neat formation along the ring.
+Effects are bold stylized flat shapes in bright cyan, with gold as the only secondary accent.
+Background: a symmetrical radial burst of wide rays with concentric rings in shades of violet and deep indigo purple.
+The character fills about half to two-thirds of the frame, focal point in the upper-center; keep the top-left corner and the bottom corners simple. 4:3 horizontal, full-bleed, no frame, no text.
 ```
 
 ---
 
-### 4. 逢凶化吉（`TurnIllToGood` / *Silver Lining*，蓝卡能力）
-- **机制**：每回合首次抽到诅咒牌时，获得魔力强度。
-- **创意视觉（无人物，深海巨蚌金缮育珠）**：大几何切面深海巨蚌张开双壳填满下中画幅，中央黑紫荆棘诅咒核沿三条宽阔纯金“金缮”裂纹向左右崩开，一颗硕大浑圆的平涂纯白电光青魔力明珠从裂口正中冲天破壳而出，向四周射出耀眼金白射线（呼应 *Silver Lining*）。
+### 4. 逢凶化吉（`TurnIllToGood` / *Silver Lining*，蓝卡能力）`[已实装]`
+- **机制**：升级后固有；每回合首次抽到诅咒牌时，获得 `2` 点魔力强度。
+- **V3 视觉设计（掰开诅咒牌现明珠｜配色 `C5 熔金`｜背景 `B3 漩涡`）**：
+  - 海岸术士胸以上近景，帽檐下两只发光青眼微微弯起、神态胸有成竹（暖色背景加一圈细暖黄外描边，同「溢流」将角色干净剥离）。
+  - 术士双手在胸前像撬开蚌壳般把一张暗紫带刺的诅咒牌生生掰成两半，裂缝正中升起一颗饱满耀眼的亮青色魔力明珠，把两瓣暗紫诅咒壳向外弹开并散出几片青白光屑。
+- **推荐参考图顺序**：`anchor_overflow.jpg`（第 1 张） + `anchor_browse.jpg`（第 2 张）
 - **Prompt**：
 ```text
-Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
-CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines, sketchy shell ridges, or decorative ink strokes inside the oyster shell, the curse shards, or the glowing pearl. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a blazing golden-white "silver lining" outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white and golden starburst rays).
-BACKGROUND & PALETTE: Intense deep storm-purple and dark abyssal-indigo graphic background patterned with bold flat diagonal bands.
-80%+ FILL RATIO & EDGE-BLEEDING ZOOM: Extreme macro close-up where the giant open deep-sea oyster shell, the splitting black-purple curse core, and the erupting cyan-gold arcane pearl fill 85% of the entire canvas and bleed off the left, right, and bottom edges, leaving less than 15% visible background.
-COMPOSITION & STRICT PHYSICAL LOGIC (SYMBOLIC MACRO OBJECT, NO HUMAN CHARACTER): Filling the lower and middle canvas are the two massive, simplified geometric dark-slate valves of a giant deep-sea pearl oyster, wide open. In the center of the shell, a dark purple-black thorned curse shell is splitting cleanly in half along three wide, flat golden-yellow kintsugi fracture lines. STRICT PHYSICS: Erupting directly upward out of the splitting center of the black curse shell is a colossal, perfectly round, flat-shaded pure-white and electric-cyan arcane mana pearl. The outward expansion of the glowing pearl blasts the broken purple-black curse halves strictly OUTWARD to the left and right while flat golden-white starburst rays shoot radially upward.
-Full-bleed 4:3 horizontal illustration.
-Negative Constraints: NO meaningless outlines, NO decorative internal black lines, NO fussy shell texture hatching, NO human figure, NO large empty background areas, NO fragmented small shadows, NO soft gradient airbrushing, NO blurry bokeh dots, NO card frame, NO borders, NO text, NO watermarks.
+Match the art style, rendering, outline quality and the character design of the attached reference images exactly.
+Slay the Spire style card illustration, clean 2D flat cel-shaded digital art. Bold simple shapes, 2-3 flat tones per surface with hard shadow edges, a thin dark outer outline and almost no interior lines, smooth flat fills with no texture. Expressive cartoon acting and a strong, readable silhouette.
+The Coastal Sorcerer: an oversized floppy deep navy wide-brimmed pointed wizard hat with a bent tip and jagged brim, the face is a dark void with two glowing cyan eyes, a thick layered light grey scarf wrapped over the lower face, a deep navy cloak with pale grey jagged trim, pale blue-grey hands with grey bandaged forearms. A thin warm yellow outline separates the character from the background.
+Chest-up close-up with eyes happily narrowed: holding a dark thorny purple-magenta cursed card in front of their chest like a clam shell, the sorcerer cracks it cleanly in half with both hands as a large, round, blazing bright cyan mana pearl rises out of the split center, pushing the two dark card halves apart with a few chunky cyan shards.
+Effects are bold stylized flat shapes in bright cyan, with deep purple-magenta as the only secondary accent.
+Background: a few wide flat swirling spiral bands in shades of golden orange and warm brown-red.
+The character fills about half to two-thirds of the frame, focal point in the upper-center; keep the top-left corner and the bottom corners simple. 4:3 horizontal, full-bleed, no frame, no text.
 ```
 
 ---
 
-## 二、未实装白卡（9 张）+ 初始卡（1 张）（严守完整五段式无废描边美术规范）
+## 二、未实装白卡（9 张）+ 初始卡（1 张）（旧 V1 规范草稿，待按需升级至 V3）
 
 > 当前白卡共 17 张：已实装 8 张（`魔导`、`蓄能`、`眩目闪光`、`竭尽打击`、`溢流`、`幻象震慑`、`回转`、`支流`）；**未实装白卡共 9 张**（含由蓝卡下调至白卡的 `会心一手`、`升华提取`、`疏浚`）+ **未实装初始卡 1 张（`吸纳`）**。以下全部 10 张均严格补全五段式与 `NO meaningless outlines` 规范，可直接复制生图。
 
@@ -110,7 +124,7 @@ Negative Constraints: NO meaningless outlines, NO internal black lines inside cr
 ---
 
 ### 3. 会心一手（`Masterstroke` / *Masterstroke*，白卡攻击）
-- **机制**：2 费｜造成 `15→20` 伤害；若本回合内变化出过攻击牌，获得 `2` 点能量。
+- **机制**：2 费｜造成 `14→19` 伤害；若本回合内变化出过攻击牌，获得 `2` 点能量。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
 CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black ink lines, sketchy woodgrain, or fine creases inside the brass hook, grey linen bandages, armor plate, or golden sparks. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving a bold dark outer contour and a blazing pure-gold outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic impact effects (solid unshaded cream-white and sunny-yellow starburst shards).
@@ -154,7 +168,7 @@ Negative Constraints: NO meaningless outlines, NO decorative internal linework, 
 ### B. 白卡技能（4 张）+ 初始技能（1 张）
 
 ### 6. 法术防备（`SpellWard` / *Spellward*，白卡技能）
-- **机制**：1 费｜获得 `7→9` 格挡；为手牌中的一张技能牌附魔：灵巧 `3`（Nimble）。
+- **机制**：1 费｜获得 `6→8` 格挡；为手牌中的一张技能牌附魔：灵巧 `3`（Nimble）。
 ```text
 Official Slay the Spire card illustration art style, minimalist 2D vector-like flat cel-shaded digital art.
 CRITICAL SHADING & NO-MEANINGLESS-OUTLINES RULE: Use large, unified, contiguous flat color blocks (strictly 2 flat tones per surface: one broad lit plane and one single connected shadow mass). Do NOT generate meaningless outlines! NEVER draw internal black lines inside water barriers, linen wraps, or feather-wing runes. Keep all internal shading boundaries 100% lineless (pure flat color-block meets pure flat color-block directly like cut-paper vector art), reserving bold outer contours and a crisp pure-white outer rim-light outline ONLY for the outermost silhouettes. Flat graphic comic deflection sparks (solid unshaded cream-white and bright orange shards).

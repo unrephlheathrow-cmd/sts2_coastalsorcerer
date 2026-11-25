@@ -2,8 +2,6 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Localization;
-using MegaCrit.Sts2.Core.Models.Enchantments;
 using ShoreMagician.Code.Abstract;
 using ShoreMagician.Code.Character;
 using ShoreMagician.Code.Commands;
@@ -19,7 +17,6 @@ public sealed class MorphStrike : ShoreMagicianCardModel
         WithCards(2, 0);
         WithVar("TransformCount", 2);
         WithTags(CardTag.Strike);
-        WithEnchantmentTip<Steady>(1);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -42,16 +39,5 @@ public sealed class MorphStrike : ShoreMagicianCardModel
 
         foreach (var card in toTransform.ToList())
             await ShoreMagicianCmd.TransformCard(choiceContext, Owner, card, this);
-
-        var enchantPrompt = new LocString("cards", $"{Id.Entry}.enchantPrompt");
-        var enchantTarget = await CommonActions.SelectSingleCard(
-            this,
-            enchantPrompt,
-            choiceContext,
-            PileType.Hand,
-            c => c != this && ShoreMagicianCmd.CanReplaceEnchantmentWith<Steady>(c));
-
-        if (enchantTarget != null)
-            await ShoreMagicianCmd.ReplaceEnchantment<Steady>(choiceContext, Owner, enchantTarget, 1, this);
     }
 }

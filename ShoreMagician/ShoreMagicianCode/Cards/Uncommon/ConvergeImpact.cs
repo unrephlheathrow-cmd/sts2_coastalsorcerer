@@ -12,13 +12,14 @@ namespace ShoreMagician.Code.Cards.Uncommon;
 [Pool(typeof(ShoreMagicianCardPool))]
 public sealed class ConvergeImpact : ShoreMagicianCardModel
 {
-    private int _pendingSharpAmount;
+    private const int MaxClearedEnchantments = 4;
+    private int? _pendingSharpAmount;
 
     public ConvergeImpact() : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
-        WithDamage(6, 0);
-        WithVar("SharpBase", 6, 2);
-        WithTips(e => HoverTipFactory.FromEnchantment<Sharp>(e.DynamicVars["SharpBase"].IntValue));
+        WithDamage(5, 0);
+        WithVar("SharpPerClear", 6, 2);
+        WithTips(e => HoverTipFactory.FromEnchantment<Sharp>(e.DynamicVars["SharpPerClear"].IntValue));
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -29,7 +30,7 @@ public sealed class ConvergeImpact : ShoreMagicianCardModel
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 
-        // 2. Clear enchantment from up to 3 cards in hand.
+        // 2. Clear enchantment from up to 4 cards in hand.
         var chosen = await CommonActions.SelectCards(
             this,
             SelectionScreenPrompt,
@@ -37,7 +38,7 @@ public sealed class ConvergeImpact : ShoreMagicianCardModel
             PileType.Hand,
             c => c != this && c.Enchantment != null,
             0,
-            3);
+            MaxClearedEnchantments);
 
         var clearedCount = 0;
         foreach (var card in chosen.ToList())
@@ -47,16 +48,18 @@ public sealed class ConvergeImpact : ShoreMagicianCardModel
         }
 
         // 3. Defer applying Sharp until AfterCardPlayed (after Powers/Relics have finished observing this play).
-        _pendingSharpAmount = DynamicVars["SharpBase"].IntValue + Math.Min(3, clearedCount);
+        _pendingSharpAmount = Math.Min(MaxClearedEnchantments, clearedCount) * DynamicVars["SharpPerClear"].IntValue;
     }
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (cardPlay.Card != this || _pendingSharpAmount <= 0 || Owner == null)
+        if (cardPlay.Card != this || _pendingSharpAmount is not { } sharpAmount || Owner == null)
             return;
 
-        var sharpAmount = _pendingSharpAmount;
-        _pendingSharpAmount = 0;
-        await ShoreMagicianCmd.ReplaceEnchantment<Sharp>(choiceContext, Owner, this, sharpAmount, this);
+        _pendingSharpAmount = null;
+        if (sharpAmount > 0)
+            await ShoreMagicianCmd.ReplaceEnchantment<Sharp>(choiceContext, Owner, this, sharpAmount, this);
+        else if (Enchantment != null)
+            await ShoreMagicianCmd.ClearEnchantment(choiceContext, Owner, this, this);
     }
 }

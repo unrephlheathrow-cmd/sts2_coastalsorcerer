@@ -13,7 +13,7 @@ public sealed class Masterstroke : ShoreMagicianCardModel
 {
     public Masterstroke() : base(2, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithDamage(15, 5);
+        WithDamage(14, 5);
         WithEnergy(2);
         WithEnergyTip();
     }

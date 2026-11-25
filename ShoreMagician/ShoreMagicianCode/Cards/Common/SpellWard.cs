@@ -13,7 +13,7 @@ public sealed class SpellWard : ShoreMagicianCardModel
 {
     public SpellWard() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
-        WithBlock(7, 2);
+        WithBlock(6, 2);
         WithVar("NimbleAmount", 3);
         WithEnchantmentTip<Nimble>(3);
     }

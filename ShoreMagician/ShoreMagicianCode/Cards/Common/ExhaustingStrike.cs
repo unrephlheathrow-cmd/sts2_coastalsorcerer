@@ -13,7 +13,7 @@ public sealed class ExhaustingStrike : ShoreMagicianCardModel
 {
     public ExhaustingStrike() : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithDamage(12, 4);
+        WithDamage(11, 4);
         WithTags(CardTag.Strike);
     }
 

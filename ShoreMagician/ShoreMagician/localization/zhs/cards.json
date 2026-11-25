@@ -27,8 +27,9 @@
   "SHOREMAGICIAN-ARCANE_GUIDANCE.description": "造成{Damage:diff()}点伤害。\n给予目标相当于你[gold]手牌[/gold]中[gold]附魔[/gold]牌数量+1层的[gold]易伤[/gold]。",
 
   "SHOREMAGICIAN-REVERSION.title": "回转",
-  "SHOREMAGICIAN-REVERSION.description": "清除手牌中一张牌的[gold]附魔[/gold]，获得{Energy:energyIcons()}。{IfUpgraded:show:\n将此牌从本场战斗中移除。|}",
+  "SHOREMAGICIAN-REVERSION.description": "清除手牌中一张牌的[gold]附魔[/gold]{IfUpgraded:show:或[gold]升级[/gold]|}，获得{Energy:energyIcons()}。",
   "SHOREMAGICIAN-REVERSION.selectionScreenPrompt": "选择一张带有[gold]附魔[/gold]的牌将其清除。",
+  "SHOREMAGICIAN-REVERSION.upgradedSelectionPrompt": "选择一张带有[gold]附魔[/gold]或[gold]升级[/gold]的牌将其清除。",
 
   "SHOREMAGICIAN-OVERFLOW.title": "溢流",
   "SHOREMAGICIAN-OVERFLOW.description": "对所有敌人造成{Damage:diff()}点伤害三次。",
@@ -53,8 +54,8 @@
   "SHOREMAGICIAN-STAGNANT_MISSILE.description": "给予目标[gold]缓慢[/gold]。\n造成{Damage:diff()}点伤害。",
 
   "SHOREMAGICIAN-CONVERGE_IMPACT.title": "聚拢冲击",
-  "SHOREMAGICIAN-CONVERGE_IMPACT.description": "造成{Damage:diff()}点伤害两次。\n清除手牌中至多3张牌的[gold]附魔[/gold]；打出结算后，将本牌的[gold]附魔[/gold]变为[purple]锋利[/purple][blue]{SharpBase:diff()}[/blue]（每清除一张额外+1点）。",
-  "SHOREMAGICIAN-CONVERGE_IMPACT.selectionScreenPrompt": "选择至多3张[gold]附魔[/gold]牌以清除其附魔。",
+  "SHOREMAGICIAN-CONVERGE_IMPACT.description": "造成{Damage:diff()}点伤害两次。\n清除手牌中至多4张牌的[gold]附魔[/gold]；打出结算后，将本牌的[gold]附魔[/gold]变为[purple]锋利[/purple][blue]{SharpPerClear:diff()}[/blue]×清除数量。",
+  "SHOREMAGICIAN-CONVERGE_IMPACT.selectionScreenPrompt": "选择至多4张[gold]附魔[/gold]牌以清除其附魔。",
 
   "SHOREMAGICIAN-QUAKE.title": "地动",
   "SHOREMAGICIAN-QUAKE.description": "对所有敌人造成{Damage:diff()}点伤害。\n击破敌人的[gold]格挡[/gold]可使其[gold]眩晕[/gold]。",
@@ -171,7 +172,7 @@
   "SHOREMAGICIAN-DRY_SEA_STONE.selectionScreenPrompt": "选择要附加[purple]稳定[/purple]的[gold]手牌[/gold]。",
 
   "SHOREMAGICIAN-WEATHERING.title": "风化",
-  "SHOREMAGICIAN-WEATHERING.description": "[gold]消耗[/gold][gold]抽牌堆[/gold]和[gold]手牌[/gold]中的所有诅咒牌。\n随后往[gold]弃牌堆[/gold]中加入{SeaBreezeCount:inverseDiff()}张[gold]海风[/gold]。",
+  "SHOREMAGICIAN-WEATHERING.description": "[gold]消耗[/gold][gold]抽牌堆[/gold]和[gold]手牌[/gold]中的所有诅咒或状态牌。\n随后往[gold]弃牌堆[/gold]中加入{SeaBreezeCount:inverseDiff()}张[gold]海风[/gold]。",
 
   "SHOREMAGICIAN-ENTER_DREAM.title": "入梦",
   "SHOREMAGICIAN-ENTER_DREAM.description": "往[gold]弃牌堆[/gold]中加入一张[gold]睡眠不佳[/gold]。\n往[gold]抽牌堆[/gold]中加入{SoulCount:diff()}张[gold]灵魂{IfUpgraded:show:+|}[/gold]。",
@@ -229,9 +230,8 @@
   "SHOREMAGICIAN-CAST_HEX.description": "造成{Damage:diff()}点伤害。\n给予目标{WeakPower:diff()}层[gold]虚弱[/gold]、{VulnerablePower:diff()}层[gold]易伤[/gold]和[gold]缓慢[/gold]。",
 
   "SHOREMAGICIAN-MORPH_STRIKE.title": "变幻打击",
-  "SHOREMAGICIAN-MORPH_STRIKE.description": "造成{Damage:diff()}点伤害，抽{Cards:diff()}张牌。\n[gold]变化[/gold]至多{TransformCount:diff()}张[gold]手牌[/gold]，将一张[gold]手牌[/gold]的[gold]附魔[/gold]变为[purple]稳定[/purple]。",
+  "SHOREMAGICIAN-MORPH_STRIKE.description": "造成{Damage:diff()}点伤害，抽{Cards:diff()}张牌。\n[gold]变化[/gold]至多{TransformCount:diff()}张[gold]手牌[/gold]。",
   "SHOREMAGICIAN-MORPH_STRIKE.selectionScreenPrompt": "选择至多2张要[gold]变化[/gold]的[gold]手牌[/gold]。",
-  "SHOREMAGICIAN-MORPH_STRIKE.enchantPrompt": "选择一张[gold]手牌[/gold]将其[gold]附魔[/gold]改为[purple]稳定[/purple]。",
 
   "SHOREMAGICIAN-ALL_RIVERS_TO_SEA.title": "百川归海",
   "SHOREMAGICIAN-ALL_RIVERS_TO_SEA.description": "[gold]变化[/gold]牌时，白卡变为蓝卡，蓝卡变为金卡，金卡可以变为塔罗牌或其他角色的0费金卡。{IfUpgraded:show:\n其他角色的金卡附加[gold]虚无[/gold]。|}",
